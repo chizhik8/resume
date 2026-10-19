@@ -1,0 +1,454 @@
+{
+  "meta": {
+    "updated": "2026-10-19",
+    "siteUrl": "https://chizhik8.github.io",
+    "basePath": "/resume/",
+    "repo": "https://github.com/chizhik8/resume",
+    "langs": ["en", "uk"],
+    "defaultLang": "en",
+    "pdf": {
+      "en": "Yuliia_Chyzhkova_CV_EN.pdf",
+      "uk": "Yuliia_Chyzhkova_CV_UA.pdf"
+    },
+    "analytics": { "goatcounter": null }
+  },
+
+  "seo": {
+    "title": {
+      "en": "Yuliia Chyzhkova — Frontend Developer",
+      "uk": "Юлія Чижкова — Frontend Developer"
+    },
+    "description": {
+      "en": "Frontend Developer in Wrocław: React, Next.js, TypeScript. 4+ years building and maintaining production web platforms. Resume and PDF.",
+      "uk": "Frontend-розробниця у Вроцлаві: React, Next.js, TypeScript. 4+ роки розробки та підтримки веб-платформ у продакшні. Резюме і PDF."
+    }
+  },
+
+  "basics": {
+    "name": { "en": "Yuliia Chyzhkova", "uk": "Юлія Чижкова" },
+    "initials": { "en": "YC", "uk": "ЮЧ" },
+    "label": "Frontend Developer",
+    "headline": {
+      "en": "I build web platforms with **React**, **Next.js** and **TypeScript**: from requirements to release and production support.",
+      "uk": "Розробляю веб-платформи на **React**, **Next.js** і **TypeScript**: від вимог до релізу і підтримки в продакшні."
+    },
+    "email": "for.yu.ch@gmail.com",
+    "phones": [
+      { "number": "+380508323344", "pdfOnly": true },
+      { "number": null, "pdfOnly": true }
+    ],
+    "location": {
+      "city": { "en": "Wrocław", "uk": "Вроцлав" },
+      "country": { "en": "Poland", "uk": "Польща" },
+      "countryCode": "PL"
+    },
+    "workFormat": { "en": "Remote or hybrid", "uk": "Віддалено або гібрид" },
+    "experience": { "en": "4+ years of experience", "uk": "4+ роки досвіду" },
+    "openToWork": true,
+    "summary": {
+      "en": "Frontend Software Engineer with hands-on experience building and maintaining web platforms, delivering end-to-end features, resolving production issues, and improving legacy code for better performance and maintainability. Strong background in API integration, testing, and cross-functional collaboration with Product, Backend, and QA teams. Focused on delivering stable, user-friendly features and supporting releases in AWS-based CI/CD environments.",
+      "uk": "Frontend-розробниця з практичним досвідом розробки та підтримки веб-платформ: веду функціонал від вимог до релізу, розбираюся з проблемами в продакшні та рефакторю легасі-код заради швидкодії й зручності підтримки. Сильні сторони: інтеграція з API, тестування і тісна робота з Product, Backend і QA. Мені важливо, щоб функціонал був стабільним і зручним, а релізи в AWS CI/CD проходили спокійно."
+    },
+    "profiles": [
+      { "network": "LinkedIn", "url": null },
+      { "network": "GitHub", "url": null },
+      { "network": "Telegram", "url": null }
+    ]
+  },
+
+  "about": {
+    "stats": [
+      {
+        "value": "4+",
+        "unit": { "en": "years", "uk": "роки" },
+        "label": {
+          "en": "of commercial frontend experience",
+          "uk": "комерційного досвіду у фронтенді"
+        }
+      },
+      {
+        "value": "2",
+        "unit": { "en": "products", "uk": "продукти" },
+        "label": {
+          "en": "in production: AR Book and the museum website",
+          "uk": "у продакшні: AR Book і сайт музею"
+        }
+      },
+      {
+        "value": "3",
+        "unit": { "en": "languages", "uk": "мови" },
+        "label": {
+          "en": "Ukrainian, English, Polish",
+          "uk": "українська, англійська, польська"
+        }
+      }
+    ],
+    "paragraphs": [
+      {
+        "en": "Frontend developer with hands-on experience building and maintaining web platforms. I deliver features from requirements refinement to release, resolve production issues and refactor legacy code for better performance and maintainability.",
+        "uk": "Frontend-розробниця з практичним досвідом розробки та підтримки веб-платформ. Веду функціонал від уточнення вимог до релізу, розбираюся з проблемами в продакшні та рефакторю легасі-код заради швидкодії та зручності підтримки."
+      },
+      {
+        "en": "My strengths are REST and GraphQL API integration, testing and close collaboration with Product, Backend and QA. I care about stable, user-friendly features and calm releases in AWS CI/CD.",
+        "uk": "Сильні сторони: інтеграція з REST і GraphQL API, тестування та тісна робота з Product, Backend і QA. Мені важливо, щоб функціонал був стабільним і зручним, а релізи в AWS CI/CD проходили спокійно."
+      }
+    ]
+  },
+
+  "skills": [
+    {
+      "name": { "en": "Core", "uk": "Основне" },
+      "featured": true,
+      "keywords": ["React", "Next.js", "TypeScript", "JavaScript"]
+    },
+    {
+      "name": { "en": "Layout and UI", "uk": "Верстка і UI" },
+      "featured": true,
+      "keywords": [
+        "HTML5",
+        "CSS3",
+        "Tailwind CSS",
+        "Material UI",
+        { "en": "Responsive Web Design", "uk": "Адаптивна верстка" },
+        "Figma"
+      ]
+    },
+    {
+      "name": { "en": "Data and APIs", "uk": "Дані і API" },
+      "featured": false,
+      "keywords": ["REST", "GraphQL", "TanStack Query", "Apollo Client", "i18next"]
+    },
+    {
+      "name": { "en": "Architecture and infrastructure", "uk": "Архітектура і інфраструктура" },
+      "featured": false,
+      "keywords": ["Webpack Module Federation", "Node.js", "AWS", "Docker", "CI/CD"]
+    },
+    {
+      "name": { "en": "Quality and monitoring", "uk": "Якість і моніторинг" },
+      "featured": false,
+      "keywords": ["Playwright", "React Testing Library", "Sentry", "Mixpanel"]
+    },
+    {
+      "name": { "en": "Process and tools", "uk": "Процес і інструменти" },
+      "featured": false,
+      "keywords": ["Agile", "Claude Code", "Codex"]
+    }
+  ],
+
+  "work": [
+    {
+      "id": "flexreality",
+      "position": "Frontend Developer",
+      "name": "FlexReality",
+      "remote": true,
+      "startDate": "2023-10",
+      "endDate": "2026-09",
+      "summary": {
+        "en": "Developed and maintained AR Book, a production educational web platform.",
+        "uk": "Розробка і підтримка AR Book, освітньої веб-платформи в продакшні."
+      },
+      "highlights": [
+        {
+          "en": "Delivered features end-to-end, from requirements refinement and implementation to testing, release and production support [… features per year].",
+          "uk": "Вела функціонал від уточнення вимог і реалізації до тестування, релізу і підтримки в продакшні [… фіч за рік]."
+        },
+        {
+          "en": "Investigated and resolved functional and production issues using Sentry.",
+          "uk": "Розслідувала і виправляла помилки в продакшні за даними Sentry."
+        },
+        {
+          "en": "Refactored legacy code to improve maintainability, readability and performance [… how much faster].",
+          "uk": "Рефакторила легасі-код, щоб пришвидшити застосунок і спростити підтримку [… на скільки швидше]."
+        },
+        {
+          "en": "Integrated the frontend with REST and GraphQL APIs, using TanStack Query and Apollo Client for asynchronous and server-state management.",
+          "uk": "Інтегрувала фронтенд з REST і GraphQL API через TanStack Query і Apollo Client для асинхронних даних і стану сервера."
+        },
+        {
+          "en": "Wrote unit and integration tests to strengthen code quality and stability [… coverage, if known].",
+          "uk": "Писала unit- і інтеграційні тести для якості та стабільності коду [… покриття, якщо відоме]."
+        },
+        {
+          "en": "Took part in application releases in an AWS-based CI/CD environment.",
+          "uk": "Брала участь у релізах застосунку в AWS CI/CD."
+        },
+        {
+          "en": "Worked closely with Product Owners, Backend Developers and QA Engineers through refinement, development, testing and release.",
+          "uk": "Тісно працювала з Product Owner, бекенд-розробниками і QA на всіх етапах: уточнення, розробка, тестування, реліз."
+        }
+      ]
+    },
+    {
+      "id": "softserve",
+      "position": "Web UI Developer",
+      "name": "SoftServe, Open Tech",
+      "remote": true,
+      "startDate": "2022-03",
+      "endDate": "2023-10",
+      "summary": {
+        "en": "Web platform for the National Museum of the History of Ukraine: a public-facing website and content management.",
+        "uk": "Веб-платформа Національного музею історії України: публічний сайт і керування контентом."
+      },
+      "highlights": [
+        {
+          "en": "Developed frontend functionality with React, Next.js, TypeScript and JavaScript.",
+          "uk": "Розробляла фронтенд на React, Next.js, TypeScript і JavaScript."
+        },
+        {
+          "en": "Implemented responsive user interfaces based on design and product requirements [… how many pages].",
+          "uk": "Верстала адаптивні інтерфейси за макетами і вимогами продукту [… скільки сторінок]."
+        },
+        {
+          "en": "Connected Strapi CMS and REST APIs so museum staff could update the content themselves.",
+          "uk": "Підключила Strapi CMS і REST API, щоб працівники музею самі оновлювали контент."
+        },
+        {
+          "en": "Investigated and resolved UI and functional issues and maintained existing frontend code as the product evolved.",
+          "uk": "Виправляла UI- і функціональні помилки та підтримувала код у міру розвитку продукту."
+        },
+        {
+          "en": "Collaborated with developers and other project team members throughout implementation, testing and delivery.",
+          "uk": "Працювала з розробниками та іншими учасниками команди від реалізації до тестування і здачі."
+        }
+      ]
+    }
+  ],
+
+  "projects": [
+    {
+      "id": "ar-book",
+      "name": "AR Book",
+      "description": {
+        "en": "Augmented reality educational platform. Delivered features from requirements to production and refactored legacy code.",
+        "uk": "Освітня платформа з доповненою реальністю. Вела фічі від вимог до продакшну і рефакторила легасі."
+      },
+      "keywords": ["React", "TypeScript", "GraphQL", "AWS"],
+      "url": null,
+      "repository": null,
+      "nda": true,
+      "image": null,
+      "imageAlt": { "en": "AR Book screenshot", "uk": "Скріншот AR Book" }
+    },
+    {
+      "id": "museum",
+      "name": {
+        "en": "National Museum of the History of Ukraine website",
+        "uk": "Сайт Національного музею історії України"
+      },
+      "description": {
+        "en": "Public museum website with dynamic content from Strapi CMS.",
+        "uk": "Публічний сайт музею з динамічним контентом зі Strapi CMS."
+      },
+      "keywords": ["Next.js", "TypeScript", "Strapi"],
+      "url": null,
+      "repository": null,
+      "nda": true,
+      "image": null,
+      "imageAlt": { "en": "Museum website screenshot", "uk": "Скріншот сайту музею" }
+    },
+    {
+      "id": "resume-site",
+      "name": { "en": "This resume website", "uk": "Цей сайт-резюме" },
+      "description": {
+        "en": "A bilingual page with light and dark themes and a PDF version, all generated from one data file. Lighthouse target: 95+.",
+        "uk": "Двомовна сторінка зі світлою і темною темами та PDF-версією з одного файлу даних. Ціль Lighthouse: 95+."
+      },
+      "keywords": ["HTML", "CSS", "JavaScript", "Node.js", "GitHub Pages", "a11y"],
+      "url": "https://chizhik8.github.io/resume/",
+      "repository": "https://github.com/chizhik8/resume",
+      "nda": false,
+      "image": null,
+      "imageAlt": {
+        "en": "Lighthouse report for this website",
+        "uk": "Звіт Lighthouse цього сайту"
+      }
+    },
+    {
+      "id": "own-project",
+      "name": null,
+      "description": null,
+      "keywords": ["[…]"],
+      "url": null,
+      "repository": null,
+      "nda": false,
+      "image": null,
+      "imageAlt": { "en": "[…] screenshot", "uk": "Скріншот […]" }
+    }
+  ],
+
+  "education": [
+    {
+      "institution": "SoftServe IT Academy",
+      "studyType": { "en": "Course", "uk": "Курс" },
+      "area": "Web UI · React Marathon"
+    },
+    {
+      "institution": "GoIT",
+      "studyType": { "en": "Course", "uk": "Курс" },
+      "area": "Full Stack Developer: React, Node.js"
+    },
+    {
+      "institution": {
+        "en": "Simon Kuznets Kharkiv National University of Economics",
+        "uk": "ХНЕУ ім. С. Кузнеця"
+      },
+      "studyType": { "en": "Master's degree", "uk": "Магістр" },
+      "area": { "en": "Accounting and Auditing", "uk": "Облік і аудит" }
+    }
+  ],
+
+  "languages": [
+    {
+      "language": { "en": "Ukrainian", "uk": "Українська" },
+      "fluency": { "en": "Native", "uk": "рідна" },
+      "level": 100
+    },
+    {
+      "language": { "en": "English", "uk": "Англійська" },
+      "fluency": { "en": "Full professional", "uk": "вільна професійна" },
+      "cefr": null,
+      "level": 75
+    },
+    {
+      "language": { "en": "Polish", "uk": "Польська" },
+      "fluency": { "en": "Elementary", "uk": "базова" },
+      "cefr": null,
+      "level": 25
+    }
+  ],
+
+  "ui": {
+    "skipLink": { "en": "Skip to content", "uk": "Перейти до змісту" },
+    "homeLink": { "en": "{name}, back to top", "uk": "{name}, на початок" },
+    "navLabel": { "en": "Main navigation", "uk": "Основна навігація" },
+    "langSwitch": {
+      "label": { "en": "Site language", "uk": "Мова сайту" },
+      "codes": { "en": "EN", "uk": "UA" },
+      "names": { "en": "English", "uk": "Українська" }
+    },
+    "theme": {
+      "toLight": { "en": "Switch to light theme", "uk": "Увімкнути світлу тему" },
+      "toDark": { "en": "Switch to dark theme", "uk": "Увімкнути темну тему" }
+    },
+    "palette": {
+      "label": {
+        "en": "Change colour palette. Current: {name}",
+        "uk": "Змінити кольорову гаму. Зараз: {name}"
+      },
+      "announce": { "en": "Colour palette: {name}", "uk": "Кольорова гама: {name}" },
+      "names": {
+        "pinkmint": { "en": "Pink and mint", "uk": "Рожевий і м’ята" },
+        "night": { "en": "Night sky", "uk": "Нічне небо" },
+        "graphite": { "en": "Graphite and orange", "uk": "Графіт і помаранч" },
+        "orchid": { "en": "Orange and purple", "uk": "Помаранч і фіолет" },
+        "sunflower": { "en": "Sunflower", "uk": "Соняшник" },
+        "cobalt": { "en": "Cobalt and orange", "uk": "Кобальт і помаранч" },
+        "cyanfire": { "en": "Cyan and fire", "uk": "Бірюза і вогонь" },
+        "summer": { "en": "Summer", "uk": "Літо" }
+      }
+    },
+
+    "sections": {
+      "about": { "eyebrow": "01 / about", "title": { "en": "About me", "uk": "Про мене" } },
+      "skills": { "eyebrow": "02 / stack", "title": { "en": "Stack", "uk": "Стек" } },
+      "experience": { "eyebrow": "03 / experience", "title": { "en": "Experience", "uk": "Досвід" } },
+      "projects": { "eyebrow": "04 / projects", "title": { "en": "Projects", "uk": "Проєкти" } },
+      "education": {
+        "eyebrow": "05 / education",
+        "title": { "en": "Education and courses", "uk": "Освіта і курси" }
+      },
+      "languages": { "eyebrow": "06 / languages", "title": { "en": "Languages", "uk": "Мови" } },
+      "timeline": { "eyebrow": "07 / timeline", "title": { "en": "Timeline", "uk": "Таймлайн" } },
+      "contact": {
+        "eyebrow": "08 / contact",
+        "title": { "en": "Let’s get acquainted", "uk": "Давайте познайомимося" }
+      }
+    },
+    "nav": ["about", "skills", "experience", "projects", "timeline", "contact"],
+    "navLabels": {
+      "about": { "en": "About", "uk": "Про мене" },
+      "skills": { "en": "Stack", "uk": "Стек" },
+      "experience": { "en": "Experience", "uk": "Досвід" },
+      "projects": { "en": "Projects", "uk": "Проєкти" },
+      "timeline": { "en": "Timeline", "uk": "Таймлайн" },
+      "contact": { "en": "Contact", "uk": "Контакти" }
+    },
+
+    "hero": {
+      "openToWork": { "en": "Open to offers", "uk": "Відкрита до пропозицій" },
+      "writeMe": { "en": "Get in touch", "uk": "Написати мені" },
+      "downloadPdf": { "en": "Download PDF", "uk": "Завантажити PDF" },
+      "profilesLabel": { "en": "Profiles", "uk": "Профілі" }
+    },
+    "skills": {
+      "showAll": {
+        "en": { "one": "Show full stack ({n} more group)", "other": "Show full stack ({n} more groups)" },
+        "uk": {
+          "one": "Показати весь стек (ще {n} група)",
+          "few": "Показати весь стек (ще {n} групи)",
+          "many": "Показати весь стек (ще {n} груп)",
+          "other": "Показати весь стек (ще {n} групи)"
+        }
+      },
+      "collapse": { "en": "Collapse", "uk": "Згорнути" }
+    },
+    "experience": {
+      "remote": { "en": "Remote", "uk": "Віддалено" },
+      "showDetails": { "en": "Show details", "uk": "Показати опис" },
+      "hideDetails": { "en": "Hide details", "uk": "Згорнути опис" },
+      "duration": {
+        "years": { "en": "{n} yr", "uk": "{n} р." },
+        "months": { "en": "{n} mo", "uk": "{n} міс." }
+      }
+    },
+    "projects": {
+      "site": { "en": "Website", "uk": "Сайт" },
+      "code": { "en": "Code", "uk": "Код" },
+      "codeSrSuffix": { "en": "on GitHub", "uk": "на GitHub" },
+      "nda": { "en": "Closed source (NDA)", "uk": "Код закритий (NDA)" },
+      "stackLabel": { "en": "Stack", "uk": "Стек" }
+    },
+    "timeline": {
+      "work": { "en": "Work", "uk": "Робота" },
+      "education": { "en": "Education", "uk": "Навчання" }
+    },
+    "contact": {
+      "text": {
+        "en": "I’m looking for a Frontend Developer role in Wrocław or remote. The fastest way to reach me is email or LinkedIn.",
+        "uk": "Шукаю позицію Frontend Developer у Вроцлаві або віддалено. Найшвидше відповідаю на email і в LinkedIn."
+      },
+      "copy": { "en": "Copy", "uk": "Скопіювати" },
+      "copied": { "en": "Copied", "uk": "Скопійовано" },
+      "copiedAnnounce": { "en": "Email copied", "uk": "Email скопійовано" },
+      "copyFailed": { "en": "Couldn’t copy", "uk": "Не вдалося скопіювати" },
+      "printVersion": { "en": "Printable A4 version", "uk": "Версія A4 для друку" }
+    },
+    "footer": {
+      "code": { "en": "Site source on GitHub", "uk": "Код сайту на GitHub" },
+      "updated": { "en": "Updated {date}", "uk": "Оновлено {date}" }
+    },
+    "missing": { "en": "[…]", "uk": "[…]" },
+
+    "cv": {
+      "title": {
+        "en": "Yuliia Chyzhkova — Resume (A4)",
+        "uk": "Юлія Чижкова — резюме (A4)"
+      },
+      "summary": { "en": "Professional Summary", "uk": "Про мене" },
+      "skills": { "en": "Skills", "uk": "Навички" },
+      "work": { "en": "Work History", "uk": "Досвід роботи" },
+      "projects": { "en": "Projects", "uk": "Проєкти" },
+      "education": { "en": "Education", "uk": "Освіта" },
+      "languages": { "en": "Languages", "uk": "Мови" },
+      "website": { "en": "Website", "uk": "Сайт" }
+    },
+    "notFound": {
+      "title": { "en": "Page not found", "uk": "Сторінку не знайдено" },
+      "text": {
+        "en": "This page doesn’t exist or has moved.",
+        "uk": "Такої сторінки немає або її перенесено."
+      },
+      "home": { "en": "Go to the homepage", "uk": "На головну" }
+    }
+  }
+}
