@@ -1,0 +1,50 @@
+:root {
+  --font-heading: 'Unbounded', system-ui, sans-serif;
+  --font-body: 'Manrope', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  --fs-display: clamp(2.5rem, 6.2vw, 5.5rem);
+  --fs-h2: 1.75rem;
+  --fs-lead: 1.125rem;
+  --fs-body: 1.0625rem;
+  --fs-small: 0.9375rem;
+  --fs-label: 0.875rem;
+
+  --lh-display: 1.02;
+  --lh-heading: 1.15;
+  --lh-body: 1.6;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 2.5rem;
+  --space-8: 3rem;
+
+  --gutter: 1.25rem;
+  --section-padding: 3.5rem;
+  --content-max: 75rem;
+  --timeline-max: 62.5rem;
+
+  --radius-card: 1.25rem;
+  --radius-panel: 2rem;
+  --radius-pill: 999px;
+  --stroke: 1.5px;
+
+  --hit: 2.75rem;
+  --button-height: 3.25rem;
+
+  --duration: 0.2s;
+  --duration-drum: 0.6s;
+  --ease-drum: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+@media (min-width: 52em) {
+  :root {
+    --fs-h2: 2.5rem;
+    --gutter: 3rem;
+    --section-padding: 5.5rem;
+  }
+}

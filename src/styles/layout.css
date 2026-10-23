@@ -1,0 +1,26 @@
+.container {
+  width: min(100% - 2 * var(--gutter), var(--content-max));
+  margin-inline: auto;
+}
+
+.section {
+  padding-block: var(--section-padding);
+}
+
+.section--alt {
+  background: var(--surface);
+}
+
+.section__head {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  margin-block-end: var(--space-7);
+}
+
+.section__eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--fs-label);
+  font-weight: 500;
+  color: var(--accent-ink);
+}

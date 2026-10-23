@@ -1,47 +1,34 @@
-/* Palettes: colors of 8 palettes x dark/light themes, resume landing. Generated from the approved mockup (2026-10-16).
- * Usage: <html data-theme="dark|light" data-palette="pinkmint|night|graphite|orchid|sunflower|cobalt|cyanfire|summer">
- * Default palette: pinkmint. Default theme: from prefers-color-scheme, then the user choice (localStorage).
- * Every text pair below passes WCAG 2.2 AA (>= 4.5:1); checked by script. */
-
 :root{color-scheme:dark}
 [data-theme="light"]{color-scheme:light}
 
-/* Рожевий і м’ята: Гарячий рожевий з м’ятою і бірюзою. Свіжо й весело. */
 [data-palette="pinkmint"]{--code-bg:#111314;--code-text:#EEF1F2;--code-mute:#A9B1B6;--code-k:#66D0BC;--code-s:#FF88BA;--code-n:#FF3E9B;--drum-1:#FF3E9B;--drum-2:#FF88BA;--drum-3:#3A8B95;--drum-4:#66D0BC}
 [data-theme="dark"][data-palette="pinkmint"]{--bg:#111314;--surface:#1A1D1F;--surface2:#23272A;--border:#353A3E;--text:#EEF1F2;--muted:#A9B1B6;--accent:#FF3E9B;--accent-ink:#FF3E9B;--on-accent:#1A0610;--tint:#10292A;--panel:#66D0BC;--hi:#FF3E9B;--on-hi:#0A1A18;--btn:#FF3E9B;--on-btn:#1A0610;--line:#66D0BC;--btn-ink:#FF3E9B;--pl1:#FF3E9B;--pl1-t:#111314;--pl2:#FF88BA;--pl2-t:#111314;--pl3:#3A8B95;--pl3-t:#111314}
 [data-theme="light"][data-palette="pinkmint"]{--bg:#FAFAFA;--surface:#FFFFFF;--surface2:#F1F1F3;--border:#E2E2E6;--text:#18181B;--muted:#52525B;--accent:#FF3E9B;--accent-ink:#C2006A;--on-accent:#1A0610;--tint:#E3F6F2;--panel:#66D0BC;--hi:#FF3E9B;--on-hi:#0A1A18;--btn:#FF3E9B;--on-btn:#1A0610;--line:#3A8B95;--btn-ink:#18181B;--pl1:#FF3E9B;--pl1-t:#111314;--pl2:#FF88BA;--pl2-t:#111314;--pl3:#3A8B95;--pl3-t:#111314}
 
-/* Нічне небо: Глибокий синій, індиго і лимонний жовтий. Сміливо і незвично. */
 [data-palette="night"]{--code-bg:#07063A;--code-text:#F4F3FF;--code-mute:#B7B5E0;--code-k:#E8E085;--code-s:#F4F3FF;--code-n:#F4F3FF;--drum-1:#030164;--drum-2:#363199;--drum-3:#2D7495;--drum-4:#E8E085}
 [data-theme="dark"][data-palette="night"]{--bg:#07063A;--surface:#100E4C;--surface2:#1A1860;--border:#2E2B7A;--text:#F4F3FF;--muted:#B7B5E0;--accent:#E8E085;--accent-ink:#E8E085;--on-accent:#030164;--tint:#24217A;--panel:#E8E085;--hi:#E8E085;--on-hi:#030164;--btn:#E8E085;--on-btn:#030164;--line:#2D7495;--btn-ink:#E8E085;--pl1:#030164;--pl1-t:#E8E085;--pl2:#363199;--pl2-t:#E8E085;--pl3:#2D7495;--pl3-t:#F4F3FF}
 [data-theme="light"][data-palette="night"]{--bg:#F7F7FB;--surface:#FFFFFF;--surface2:#EEEEF6;--border:#DCDCEB;--text:#0B0A2E;--muted:#4A4870;--accent:#363199;--accent-ink:#363199;--on-accent:#FFFFFF;--tint:#EEEEF6;--panel:#E8E085;--hi:#E8E085;--on-hi:#030164;--btn:#2D7495;--on-btn:#F4F3FF;--line:#363199;--btn-ink:#2D7495;--pl1:#030164;--pl1-t:#E8E085;--pl2:#363199;--pl2-t:#E8E085;--pl3:#2D7495;--pl3-t:#F4F3FF}
 
-/* Графіт і помаранч: Графіт, сіро-бірюзовий і яскравий помаранч. Технічно й енергійно. */
 [data-palette="graphite"]{--code-bg:#1E2328;--code-text:#F5F5F5;--code-mute:#C2CBD1;--code-k:#F5F5F5;--code-s:#76ABAE;--code-n:#FF5722;--drum-1:#F5F5F5;--drum-2:#76ABAE;--drum-3:#303841;--drum-4:#FF5722}
 [data-theme="dark"][data-palette="graphite"]{--bg:#1E2328;--surface:#303841;--surface2:#3A434D;--border:#4A545F;--text:#F5F5F5;--muted:#C2CBD1;--accent:#FF5722;--accent-ink:#FF7A50;--on-accent:#1A0A04;--tint:#3A434D;--panel:#76ABAE;--hi:#FF5722;--on-hi:#14181C;--btn:#FF5722;--on-btn:#1A0A04;--line:#76ABAE;--btn-ink:#FF5722;--pl1:#FF5722;--pl1-t:#1E2328;--pl2:#303841;--pl2-t:#F5F5F5;--pl3:#F5F5F5;--pl3-t:#303841}
 [data-theme="light"][data-palette="graphite"]{--bg:#F5F5F5;--surface:#FFFFFF;--surface2:#EBEBEB;--border:#DADADA;--text:#303841;--muted:#57616B;--accent:#FF5722;--accent-ink:#C2380E;--on-accent:#1A0A04;--tint:#E6EFF0;--panel:#76ABAE;--hi:#FF5722;--on-hi:#14181C;--btn:#FF5722;--on-btn:#1A0A04;--line:#303841;--btn-ink:#303841;--pl1:#FF5722;--pl1-t:#1E2328;--pl2:#303841;--pl2-t:#F5F5F5;--pl3:#F5F5F5;--pl3-t:#303841}
 
-/* Помаранч і фіолет: Помаранч, глибокий фіолет і бірюза. Контрастно й креативно. */
 [data-palette="orchid"]{--code-bg:#160B24;--code-text:#F4EEFA;--code-mute:#C2B2D6;--code-k:#EEEEEE;--code-s:#FF8000;--code-n:#219B9D;--drum-1:#FF8000;--drum-2:#4C1F7A;--drum-3:#219B9D;--drum-4:#EEEEEE}
 [data-theme="dark"][data-palette="orchid"]{--bg:#160B24;--surface:#22123A;--surface2:#2E1A4C;--border:#4C1F7A;--text:#F4EEFA;--muted:#C2B2D6;--accent:#FF8000;--accent-ink:#FF8A1F;--on-accent:#1F0E00;--tint:#33195A;--panel:#219B9D;--hi:#FF8000;--on-hi:#1F0E00;--btn:#FF8000;--on-btn:#1F0E00;--line:#219B9D;--btn-ink:#FF8000;--pl1:#FF8000;--pl1-t:#4C1F7A;--pl2:#EEEEEE;--pl2-t:#4C1F7A;--pl3:#4C1F7A;--pl3-t:#EEEEEE}
 [data-theme="light"][data-palette="orchid"]{--bg:#F6F6F6;--surface:#FFFFFF;--surface2:#EEEEEE;--border:#DDDDDD;--text:#1E0F33;--muted:#5A4D6B;--accent:#FF8000;--accent-ink:#4C1F7A;--on-accent:#1F0E00;--tint:#EEEEEE;--panel:#FF8000;--hi:#FF8000;--on-hi:#1F0E00;--btn:#FF8000;--on-btn:#1F0E00;--line:#219B9D;--btn-ink:#1E0F33;--pl1:#219B9D;--pl1-t:#160B24;--pl2:#EEEEEE;--pl2-t:#4C1F7A;--pl3:#4C1F7A;--pl3-t:#EEEEEE}
 
-/* Соняшник: Сонячний жовтий, зелень і помаранч. Тепло й природно. */
 [data-palette="sunflower"]{--code-bg:#121A10;--code-text:#F4F6EE;--code-mute:#B9C4AE;--code-k:#FFCB3D;--code-s:#F1A344;--code-n:#5D9253;--drum-1:#FFCB3D;--drum-2:#5D9253;--drum-3:#557945;--drum-4:#F1A344}
 [data-theme="dark"][data-palette="sunflower"]{--bg:#121A10;--surface:#1A2517;--surface2:#233021;--border:#34472F;--text:#F4F6EE;--muted:#B9C4AE;--accent:#FFCB3D;--accent-ink:#FFCB3D;--on-accent:#2A1F00;--tint:#2A3A22;--panel:#5D9253;--hi:#FFCB3D;--on-hi:#0E1609;--btn:#FFCB3D;--on-btn:#2A1F00;--line:#557945;--btn-ink:#FFCB3D;--pl1:#FFCB3D;--pl1-t:#121A10;--pl2:#F1A344;--pl2-t:#121A10;--pl3:#121A10;--pl3-t:#FFCB3D}
 [data-theme="light"][data-palette="sunflower"]{--bg:#FAF9F4;--surface:#FFFFFF;--surface2:#F1F0E6;--border:#E0DECF;--text:#1A2216;--muted:#4F5A48;--accent:#FFCB3D;--accent-ink:#3D6B32;--on-accent:#2A1F00;--tint:#EEF3E6;--panel:#FFCB3D;--hi:#FFCB3D;--on-hi:#0E1609;--btn:#FFCB3D;--on-btn:#2A1F00;--line:#557945;--btn-ink:#1A2216;--pl1:#557945;--pl1-t:#F4F6EE;--pl2:#5D9253;--pl2-t:#121A10;--pl3:#FAF9F4;--pl3-t:#557945}
 
-/* Кобальт і помаранч: Кобальтовий синій, помаранч і кремовий. Яскраво й упевнено. */
 [data-palette="cobalt"]{--code-bg:#050A2E;--code-text:#F5F1DC;--code-mute:#BDB9A6;--code-k:#F5F1DC;--code-s:#FF8040;--code-n:#F5F1DC;--drum-1:#001BB7;--drum-2:#0046FF;--drum-3:#FF8040;--drum-4:#F5F1DC}
 [data-theme="dark"][data-palette="cobalt"]{--bg:#050A2E;--surface:#0B1442;--surface2:#132056;--border:#22347A;--text:#F5F1DC;--muted:#BDB9A6;--accent:#FF8040;--accent-ink:#FF8D52;--on-accent:#1A0A00;--tint:#1A2A6B;--panel:#FF8040;--hi:#FF8040;--on-hi:#1A0A00;--btn:#FF8040;--on-btn:#1A0A00;--line:#0046FF;--btn-ink:#FF8040;--pl1:#0046FF;--pl1-t:#F5F1DC;--pl2:#001BB7;--pl2-t:#F5F1DC;--pl3:#F5F1DC;--pl3-t:#001BB7}
 [data-theme="light"][data-palette="cobalt"]{--bg:#F5F1DC;--surface:#FFFCF0;--surface2:#EDE8CF;--border:#DDD6B6;--text:#0A1033;--muted:#4A4A5E;--accent:#0046FF;--accent-ink:#0038CC;--on-accent:#FFFFFF;--tint:#E6E9F8;--panel:#FF8040;--hi:#FF8040;--on-hi:#1A0A00;--btn:#FF8040;--on-btn:#001BB7;--line:#0046FF;--btn-ink:#0A1033;--pl1:#0046FF;--pl1-t:#F5F1DC;--pl2:#001BB7;--pl2-t:#F5F1DC;--pl3:#F5F1DC;--pl3-t:#001BB7}
 
-/* Бірюза і вогонь: Бірюзовий з вогняним помаранчем. Контрастно й динамічно. */
 [data-palette="cyanfire"]{--code-bg:#0D1719;--code-text:#EEF9FA;--code-mute:#A6BFC3;--code-k:#B2EBF2;--code-s:#00BCD4;--code-n:#FF5722;--drum-1:#00BCD4;--drum-2:#B2EBF2;--drum-3:#FF5722;--drum-4:#DD2C00}
 [data-theme="dark"][data-palette="cyanfire"]{--bg:#0D1719;--surface:#142226;--surface2:#1B2D32;--border:#2A444A;--text:#EEF9FA;--muted:#A6BFC3;--accent:#00BCD4;--accent-ink:#00BCD4;--on-accent:#00262B;--tint:#0E2B30;--panel:#FF5722;--hi:#00BCD4;--on-hi:#1A0600;--btn:#00BCD4;--on-btn:#00262B;--line:#DD2C00;--btn-ink:#00BCD4;--pl1:#00BCD4;--pl1-t:#0D1719;--pl2:#B2EBF2;--pl2-t:#0D1719;--pl3:#DD2C00;--pl3-t:#F7FBFC}
 [data-theme="light"][data-palette="cyanfire"]{--bg:#F7FBFC;--surface:#FFFFFF;--surface2:#E8F7F9;--border:#CDE9ED;--text:#10262A;--muted:#46595C;--accent:#00BCD4;--accent-ink:#B82500;--on-accent:#00262B;--tint:#E8F7F9;--panel:#B2EBF2;--hi:#FF5722;--on-hi:#1A0600;--btn:#00BCD4;--on-btn:#00262B;--line:#DD2C00;--btn-ink:#10262A;--pl1:#DD2C00;--pl1-t:#F7FBFC;--pl2:#FF5722;--pl2-t:#0D1719;--pl3:#00BCD4;--pl3-t:#0D1719}
 
-/* Літо: Небесний, лайм, помаранч і червоний. Найграйливіша. */
 [data-palette="summer"]{--code-bg:#0F1A1F;--code-text:#F2F8FA;--code-mute:#A8C0C9;--code-k:#D6FB61;--code-s:#39B1D1;--code-n:#F6850C;--drum-1:#39B1D1;--drum-2:#D6FB61;--drum-3:#F6850C;--drum-4:#DE3E3E}
 [data-theme="dark"][data-palette="summer"]{--bg:#0F1A1F;--surface:#162730;--surface2:#1E3440;--border:#2C4A58;--text:#F2F8FA;--muted:#A8C0C9;--accent:#D6FB61;--accent-ink:#D6FB61;--on-accent:#1C2400;--tint:#213A20;--panel:#39B1D1;--hi:#D6FB61;--on-hi:#0E1A05;--btn:#D6FB61;--on-btn:#1C2400;--line:#39B1D1;--btn-ink:#D6FB61;--pl1:#F6850C;--pl1-t:#0F1A1F;--pl2:#D6FB61;--pl2-t:#0F1A1F;--pl3:#0F1A1F;--pl3-t:#D6FB61}
 [data-theme="light"][data-palette="summer"]{--bg:#F8FBFC;--surface:#FFFFFF;--surface2:#EAF4F7;--border:#D4E6EC;--text:#0F2128;--muted:#4A5E66;--accent:#F6850C;--accent-ink:#B8282B;--on-accent:#1F0F00;--tint:#FDEBD8;--panel:#D6FB61;--hi:#39B1D1;--on-hi:#08202A;--btn:#39B1D1;--on-btn:#0F1A1F;--line:#DE3E3E;--btn-ink:#0F2128;--pl1:#39B1D1;--pl1-t:#0F1A1F;--pl2:#F6850C;--pl2-t:#0F1A1F;--pl3:#F8FBFC;--pl3-t:#0F1A1F}

@@ -1,0 +1,14 @@
+{
+  "name": "resume",
+  "private": true,
+  "description": "Resume website of Yuliia Chyzhkova",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node scripts/build.js",
+    "dev": "node scripts/dev.js",
+    "test": "node --test"
+  }
+}
