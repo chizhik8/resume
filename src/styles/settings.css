@@ -41,7 +41,7 @@
   --ease-drum: cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
-@media (min-width: 52em) {
+@media (min-width: 47.25em) {
   :root {
     --fs-h2: 2.5rem;
     --gutter: 3rem;

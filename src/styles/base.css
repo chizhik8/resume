@@ -85,7 +85,7 @@ a {
   color: var(--accent-ink);
 }
 
-a:hover {
+:where(a):hover {
   color: var(--text);
 }
 
@@ -101,6 +101,12 @@ a:hover {
   overflow: hidden;
   clip-path: inset(50%);
   white-space: nowrap;
+}
+
+:root:not([data-js]) .js-only,
+[data-theme='dark'] .only-light,
+[data-theme='light'] .only-dark {
+  display: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {

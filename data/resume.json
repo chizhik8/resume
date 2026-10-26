@@ -327,8 +327,17 @@
       "names": { "en": "English", "uk": "Українська" }
     },
     "theme": {
+      "label": { "en": "Theme", "uk": "Тема" },
+      "dark": { "en": "Dark", "uk": "Темна" },
+      "light": { "en": "Light", "uk": "Світла" },
       "toLight": { "en": "Switch to light theme", "uk": "Увімкнути світлу тему" },
       "toDark": { "en": "Switch to dark theme", "uk": "Увімкнути темну тему" }
+    },
+    "menu": {
+      "label": { "en": "Menu", "uk": "Меню" },
+      "open": { "en": "Open menu", "uk": "Відкрити меню" },
+      "close": { "en": "Close menu", "uk": "Закрити меню" },
+      "language": { "en": "Language", "uk": "Мова" }
     },
     "palette": {
       "label": {
