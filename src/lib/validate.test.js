@@ -2,7 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { validate } from './validate.js';
 
-const meta = { langs: ['en', 'uk'] };
+const meta = { langs: ['en', 'uk'], updated: '2026-10-19', repo: 'https://github.com/x/y' };
 
 test('valid data has no errors and no missing fields', () => {
   const result = validate({ meta, basics: { name: { en: 'Yuliia', uk: 'Юлія' } }, projects: [] });
@@ -77,6 +77,39 @@ test('only https: and mailto: links are allowed', () => {
     'basics.profiles[2].url: only https: and mailto: links are allowed, got "javascript:alert(1)"',
     'basics.profiles[3].url: only https: and mailto: links are allowed, got "http://example.com"',
   ]);
+});
+
+test('updated, startDate and endDate are checked as dates', () => {
+  const { errors, missing } = validate({
+    meta: { ...meta, updated: '2026/10' },
+    work: [
+      { startDate: '2026/10', endDate: '2026/10' },
+      { startDate: '2023-10', endDate: null },
+    ],
+  });
+  assert.deepEqual(errors, [
+    'meta.updated: dates must be YYYY-MM or YYYY-MM-DD, got "2026/10"',
+    'work[0].startDate: dates must be YYYY-MM or YYYY-MM-DD, got "2026/10"',
+    'work[0].endDate: dates must be YYYY-MM or YYYY-MM-DD, got "2026/10"',
+  ]);
+  assert.deepEqual(missing, ['work[1].endDate']);
+});
+
+test('a date that is not a string is an error, a localized label is not', () => {
+  const { errors } = validate({
+    meta,
+    work: [{ startDate: 202310, endDate: { year: 2026 } }],
+    ui: { footer: { updated: { en: 'Updated {date}', uk: 'Оновлено {date}' } } },
+  });
+  assert.deepEqual(errors, [
+    'work[0].startDate: dates must be YYYY-MM or YYYY-MM-DD, got 202310',
+    'work[0].endDate: dates must be YYYY-MM or YYYY-MM-DD, got {"year":2026}',
+  ]);
+});
+
+test('meta.updated and meta.repo are required', () => {
+  const { errors } = validate({ meta: { ...meta, updated: null, repo: undefined } });
+  assert.deepEqual(errors, ['meta.updated: required', 'meta.repo: required']);
 });
 
 test('every project needs imageAlt in both languages', () => {

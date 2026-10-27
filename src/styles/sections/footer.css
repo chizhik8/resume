@@ -1,0 +1,17 @@
+.footer {
+  padding-block: 1.75rem var(--space-7);
+  border-block-start: 1px solid var(--border);
+  color: var(--muted);
+  font-size: var(--fs-small);
+  --footer-column-gap: var(--space-4);
+}
+
+.footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem var(--footer-column-gap);
+}
+
+.footer__dot {
+  margin-inline-start: var(--footer-column-gap);
+}

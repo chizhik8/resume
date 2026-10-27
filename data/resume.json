@@ -358,25 +358,19 @@
     },
 
     "sections": {
-      "about": { "eyebrow": "01 / about", "title": { "en": "About me", "uk": "Про мене" } },
-      "skills": { "eyebrow": "02 / stack", "title": { "en": "Stack", "uk": "Стек" } },
-      "experience": { "eyebrow": "03 / experience", "title": { "en": "Experience", "uk": "Досвід" } },
-      "projects": { "eyebrow": "04 / projects", "title": { "en": "Projects", "uk": "Проєкти" } },
-      "education": {
-        "eyebrow": "05 / education",
-        "title": { "en": "Education and courses", "uk": "Освіта і курси" }
-      },
-      "languages": { "eyebrow": "06 / languages", "title": { "en": "Languages", "uk": "Мови" } },
-      "timeline": { "eyebrow": "07 / timeline", "title": { "en": "Timeline", "uk": "Таймлайн" } },
-      "contact": {
-        "eyebrow": "08 / contact",
-        "title": { "en": "Let’s get acquainted", "uk": "Давайте познайомимося" }
-      }
+      "about": { "number": "01", "title": { "en": "About me", "uk": "Про мене" } },
+      "skills": { "number": "02", "title": { "en": "Skills", "uk": "Навички" } },
+      "experience": { "number": "03", "title": { "en": "Experience", "uk": "Досвід" } },
+      "projects": { "number": "04", "title": { "en": "Projects", "uk": "Проєкти" } },
+      "education": { "number": "05", "title": { "en": "Education and courses", "uk": "Освіта і курси" } },
+      "languages": { "number": "06", "title": { "en": "Languages", "uk": "Мови" } },
+      "timeline": { "number": "07", "title": { "en": "Timeline", "uk": "Таймлайн" } },
+      "contact": { "number": "08", "title": { "en": "Let’s get acquainted", "uk": "Давайте познайомимося" } }
     },
     "nav": ["about", "skills", "experience", "projects", "timeline", "contact"],
     "navLabels": {
       "about": { "en": "About", "uk": "Про мене" },
-      "skills": { "en": "Stack", "uk": "Стек" },
+      "skills": { "en": "Skills", "uk": "Навички" },
       "experience": { "en": "Experience", "uk": "Досвід" },
       "projects": { "en": "Projects", "uk": "Проєкти" },
       "timeline": { "en": "Timeline", "uk": "Таймлайн" },
@@ -391,12 +385,12 @@
     },
     "skills": {
       "showAll": {
-        "en": { "one": "Show full stack ({n} more group)", "other": "Show full stack ({n} more groups)" },
+        "en": { "one": "Show all skills ({n} more group)", "other": "Show all skills ({n} more groups)" },
         "uk": {
-          "one": "Показати весь стек (ще {n} група)",
-          "few": "Показати весь стек (ще {n} групи)",
-          "many": "Показати весь стек (ще {n} груп)",
-          "other": "Показати весь стек (ще {n} групи)"
+          "one": "Показати всі навички (ще {n} група)",
+          "few": "Показати всі навички (ще {n} групи)",
+          "many": "Показати всі навички (ще {n} груп)",
+          "other": "Показати всі навички (ще {n} групи)"
         }
       },
       "collapse": { "en": "Collapse", "uk": "Згорнути" }

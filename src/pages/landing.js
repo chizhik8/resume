@@ -3,6 +3,7 @@ import { createT } from '../lib/i18n.js';
 import { assetPath } from '../lib/paths.js';
 import { section } from '../components/section.js';
 import { header } from '../sections/header.js';
+import { footer } from '../sections/footer.js';
 
 const SECTIONS = ['about', 'skills', 'experience', 'projects', 'education', 'timeline', 'contact'];
 
@@ -39,12 +40,13 @@ export const page = (data, lang, { headScript }) => {
       ${SECTIONS.map((id, i) =>
         section({
           id,
-          eyebrow: ui.sections[id].eyebrow,
+          number: ui.sections[id].number,
           title: t(ui.sections[id].title),
           alt: i % 2 === 0,
         }),
       )}
     </main>
+    ${footer(data, { lang, t })}
   </body>
 </html>
 `;

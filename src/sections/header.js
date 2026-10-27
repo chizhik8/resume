@@ -69,7 +69,7 @@ export const header = ({ meta, basics, ui }, { lang, t, defaultPalette }) => {
             ${ui.nav.map(
               (id) => html`<li>
                 <a class="menu__link" href="#${id}">
-                  <span class="menu__number" aria-hidden="true">${ui.sections[id].eyebrow.split(' ')[0]}</span>
+                  <span class="menu__number" aria-hidden="true">${ui.sections[id].number}</span>
                   ${t(ui.navLabels[id])}
                 </a>
               </li>`,
