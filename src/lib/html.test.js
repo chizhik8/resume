@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { escape, html, raw } from './html.js';
+import { escape, html, raw, strong } from './html.js';
 
 test('escape replaces HTML special characters', () => {
   assert.equal(escape(`<a href="x">Tom & Jerry's</a>`), '&lt;a href=&quot;x&quot;&gt;Tom &amp; Jerry&#39;s&lt;/a&gt;');
@@ -30,4 +30,11 @@ test('html keeps the number 0', () => {
 
 test('raw inserts trusted markup as is', () => {
   assert.equal(String(html`<span>${raw('<svg></svg>')}</span>`), '<span><svg></svg></span>');
+});
+
+test('strong turns **text** into <strong> and escapes everything else', () => {
+  assert.equal(
+    String(html`<p>${strong('Build with **React** & **<Next>**, not <b>')}</p>`),
+    '<p>Build with <strong>React</strong> &amp; <strong>&lt;Next&gt;</strong>, not &lt;b&gt;</p>',
+  );
 });

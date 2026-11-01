@@ -3,12 +3,13 @@ import { createT } from '../lib/i18n.js';
 import { assetPath } from '../lib/paths.js';
 import { section } from '../components/section.js';
 import { header } from '../sections/header.js';
+import { hero } from '../sections/hero.js';
 import { footer } from '../sections/footer.js';
 
 const SECTIONS = ['about', 'skills', 'experience', 'projects', 'education', 'timeline', 'contact'];
 
 export const page = (data, lang, { headScript }) => {
-  const { meta, seo, basics, ui } = data;
+  const { meta, seo, ui } = data;
   const { t } = createT(lang);
   const asset = (file) => assetPath(meta, file);
   const palettes = Object.keys(ui.palette.names);
@@ -32,11 +33,7 @@ export const page = (data, lang, { headScript }) => {
   <body>
     ${header(data, { lang, t, defaultPalette })}
     <main id="main">
-      <section id="top" class="section" aria-labelledby="top-title">
-        <div class="container">
-          <h1 id="top-title">${t(basics.name)}</h1>
-        </div>
-      </section>
+      ${hero(data, { t })}
       ${SECTIONS.map((id, i) =>
         section({
           id,

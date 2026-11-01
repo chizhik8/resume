@@ -7,12 +7,8 @@ html {
   inset-block-start: var(--space-2);
   inset-inline-start: var(--space-2);
   z-index: 20;
+  min-height: 0;
   padding: var(--space-2) var(--space-4);
-  border-radius: var(--radius-pill);
-  background: var(--btn);
-  color: var(--on-btn);
-  font-weight: 700;
-  text-decoration: none;
   translate: 0 -200%;
 }
 
@@ -138,16 +134,9 @@ html {
 }
 
 .header__button {
-  display: grid;
-  place-items: center;
   inline-size: var(--hit);
   block-size: var(--hit);
   padding: 0;
-  border: var(--stroke) solid var(--border);
-  border-radius: 50%;
-  background: var(--surface);
-  color: var(--text);
-  cursor: pointer;
 }
 
 .header__button svg {
@@ -258,15 +247,9 @@ html {
 }
 
 .theme-pill {
-  min-height: var(--hit);
   padding: 0 var(--space-4);
-  border: var(--stroke) solid var(--border);
-  border-radius: var(--radius-pill);
-  background: var(--surface);
-  color: var(--text);
   font-size: var(--fs-small);
   font-weight: 600;
-  cursor: pointer;
 }
 
 .theme-pill > span {
@@ -276,17 +259,8 @@ html {
 }
 
 .menu__cta {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.625rem;
   min-height: var(--menu-row);
   margin-block-start: var(--space-5);
-  border-radius: var(--radius-pill);
-  background: var(--btn);
-  color: var(--on-btn);
-  font-weight: 700;
-  text-decoration: none;
 }
 
 @media (width < 47.25em) {

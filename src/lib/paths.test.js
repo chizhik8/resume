@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { assetPath, langDir, pagePath } from './paths.js';
+import { assetPath, langDir, pagePath, rootFilePath } from './paths.js';
 
 const meta = { basePath: '/resume/', defaultLang: 'en' };
 
@@ -18,9 +18,14 @@ test('assets are absolute paths with the base', () => {
   assert.equal(assetPath(meta, 'site.css'), '/resume/assets/site.css');
 });
 
+test('files in the site root are absolute paths with the base', () => {
+  assert.equal(rootFilePath(meta, 'CV.pdf'), '/resume/CV.pdf');
+});
+
 test('a custom domain only changes basePath', () => {
   const domain = { ...meta, basePath: '/' };
   assert.equal(pagePath(domain, 'en'), '/');
   assert.equal(pagePath(domain, 'uk'), '/uk/');
   assert.equal(assetPath(domain, 'site.css'), '/assets/site.css');
+  assert.equal(rootFilePath(domain, 'CV.pdf'), '/CV.pdf');
 });

@@ -20,7 +20,7 @@ export const header = ({ meta, basics, ui }, { lang, t, defaultPalette }) => {
       )}
     </ul>`;
 
-  return html`<a class="skip-link" href="#main">${t(ui.skipLink)}</a>
+  return html`<a class="skip-link button button--primary" href="#main">${t(ui.skipLink)}</a>
     <header class="header">
       <div class="container header__inner">
         <a class="header__brand" href="#top" aria-label="${t(ui.homeLink, { name })}">
@@ -37,7 +37,7 @@ export const header = ({ meta, basics, ui }, { lang, t, defaultPalette }) => {
         <div class="header__controls">
           ${langLinks('header__wide')}
           <button
-            class="header__button drum js-only"
+            class="header__button button button--control drum js-only"
             type="button"
             data-palette-drum
             data-names="${JSON.stringify(paletteNames)}"
@@ -47,12 +47,12 @@ export const header = ({ meta, basics, ui }, { lang, t, defaultPalette }) => {
           >
             <span class="drum__disc" aria-hidden="true"></span>
           </button>
-          <button class="header__button header__wide js-only" type="button" data-theme-toggle>
+          <button class="header__button button button--control header__wide js-only" type="button" data-theme-toggle>
             <span class="only-dark">${sun}<span class="visually-hidden">${t(theme.toLight)}</span></span>
             <span class="only-light">${moon}<span class="visually-hidden">${t(theme.toDark)}</span></span>
           </button>
           <button
-            class="header__button header__burger js-only"
+            class="header__button button button--control header__burger js-only"
             type="button"
             aria-expanded="false"
             aria-controls="menu"
@@ -82,12 +82,12 @@ export const header = ({ meta, basics, ui }, { lang, t, defaultPalette }) => {
         </div>
         <div class="menu__row">
           <span class="menu__label" aria-hidden="true">${t(theme.label)}</span>
-          <button class="theme-pill" type="button" data-theme-toggle>
+          <button class="theme-pill button button--control" type="button" data-theme-toggle>
             <span class="only-dark">${moon}${t(theme.dark)}<span class="visually-hidden">. ${t(theme.toLight)}</span></span>
             <span class="only-light">${sun}${t(theme.light)}<span class="visually-hidden">. ${t(theme.toDark)}</span></span>
           </button>
         </div>
-        <a class="menu__cta" href="#contact">${t(ui.hero.writeMe)}${arrow}</a>
+        <a class="menu__cta button button--primary" href="#contact">${t(ui.hero.writeMe)}${arrow}</a>
       </div>
       <p class="visually-hidden" aria-live="polite" data-palette-status></p>
     </header>`;

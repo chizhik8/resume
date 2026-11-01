@@ -15,11 +15,11 @@
 
   "seo": {
     "title": {
-      "en": "Yuliia Chyzhkova — Frontend Developer",
-      "uk": "Юлія Чижкова — Frontend Developer"
+      "en": "Yuliia Chyzhkova — Frontend Software Engineer",
+      "uk": "Юлія Чижкова — Frontend Software Engineer"
     },
     "description": {
-      "en": "Frontend Developer in Wrocław: React, Next.js, TypeScript. 4+ years building and maintaining production web platforms. Resume and PDF.",
+      "en": "Frontend Software Engineer in Wrocław: React, Next.js, TypeScript. 4+ years building and maintaining production web platforms. Resume and PDF.",
       "uk": "Frontend-розробниця у Вроцлаві: React, Next.js, TypeScript. 4+ роки розробки та підтримки веб-платформ у продакшні. Резюме і PDF."
     }
   },
@@ -27,10 +27,10 @@
   "basics": {
     "name": { "en": "Yuliia Chyzhkova", "uk": "Юлія Чижкова" },
     "initials": { "en": "YC", "uk": "ЮЧ" },
-    "label": "Frontend Developer",
+    "label": "Frontend Software Engineer",
     "headline": {
-      "en": "I build web platforms with **React**, **Next.js** and **TypeScript**: from requirements to release and production support.",
-      "uk": "Розробляю веб-платформи на **React**, **Next.js** і **TypeScript**: від вимог до релізу і підтримки в продакшні."
+      "en": "I bring passion, precision, and responsibility to every project; I take on complex challenges and deliver well-considered, reliable, and expertly executed solutions on time.",
+      "uk": "У кожен проєкт я вкладаю пристрасть, точність і відповідальність; беруся за складні завдання та вчасно надаю добре продумані, надійні й майстерно виконані рішення."
     },
     "email": "for.yu.ch@gmail.com",
     "phones": [
@@ -49,10 +49,12 @@
       "en": "Frontend Software Engineer with hands-on experience building and maintaining web platforms, delivering end-to-end features, resolving production issues, and improving legacy code for better performance and maintainability. Strong background in API integration, testing, and cross-functional collaboration with Product, Backend, and QA teams. Focused on delivering stable, user-friendly features and supporting releases in AWS-based CI/CD environments.",
       "uk": "Frontend-розробниця з практичним досвідом розробки та підтримки веб-платформ: веду функціонал від вимог до релізу, розбираюся з проблемами в продакшні та рефакторю легасі-код заради швидкодії й зручності підтримки. Сильні сторони: інтеграція з API, тестування і тісна робота з Product, Backend і QA. Мені важливо, щоб функціонал був стабільним і зручним, а релізи в AWS CI/CD проходили спокійно."
     },
+    "stack": ["JavaScript", "TypeScript", "React", "Next.js", "Node.js", "REST / GraphQL"],
+    "focus": ["UI/UX", "Performance", "Code Quality"],
     "profiles": [
-      { "network": "LinkedIn", "url": null },
-      { "network": "GitHub", "url": null },
-      { "network": "Telegram", "url": null }
+      { "network": "LinkedIn", "url": "https://www.linkedin.com/in/yuliia-chyzhkova-580514337" },
+      { "network": "GitHub", "url": "https://github.com/chizhik8" },
+      { "network": "Telegram", "url": "https://t.me/chizhik_yu" }
     ]
   },
 
@@ -138,7 +140,7 @@
   "work": [
     {
       "id": "flexreality",
-      "position": "Frontend Developer",
+      "position": "Frontend Software Engineer",
       "name": "FlexReality",
       "remote": true,
       "startDate": "2023-10",
@@ -381,7 +383,12 @@
       "openToWork": { "en": "Open to offers", "uk": "Відкрита до пропозицій" },
       "writeMe": { "en": "Get in touch", "uk": "Написати мені" },
       "downloadPdf": { "en": "Download PDF", "uk": "Завантажити PDF" },
-      "profilesLabel": { "en": "Profiles", "uk": "Профілі" }
+      "profilesLabel": { "en": "Profiles", "uk": "Профілі" },
+      "metaLabels": {
+        "location": { "en": "Location", "uk": "Місто" },
+        "workFormat": { "en": "Work format", "uk": "Формат роботи" },
+        "experience": { "en": "Experience", "uk": "Досвід" }
+      }
     },
     "skills": {
       "showAll": {
@@ -417,8 +424,8 @@
     },
     "contact": {
       "text": {
-        "en": "I’m looking for a Frontend Developer role in Wrocław or remote. The fastest way to reach me is email or LinkedIn.",
-        "uk": "Шукаю позицію Frontend Developer у Вроцлаві або віддалено. Найшвидше відповідаю на email і в LinkedIn."
+        "en": "I’m looking for a Frontend Software Engineer role in Wrocław or remote. The fastest way to reach me is email or LinkedIn.",
+        "uk": "Шукаю позицію Frontend Software Engineer у Вроцлаві або віддалено. Найшвидше відповідаю на email і в LinkedIn."
       },
       "copy": { "en": "Copy", "uk": "Скопіювати" },
       "copied": { "en": "Copied", "uk": "Скопійовано" },
@@ -430,6 +437,7 @@
       "code": { "en": "Site source on GitHub", "uk": "Код сайту на GitHub" },
       "updated": { "en": "Updated {date}", "uk": "Оновлено {date}" }
     },
+    "newTab": { "en": "(opens in a new tab)", "uk": "(відкривається в новій вкладці)" },
     "missing": { "en": "[…]", "uk": "[…]" },
 
     "cv": {

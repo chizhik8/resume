@@ -11,7 +11,7 @@ const sectionStyles = (await readdir(new URL('src/styles/sections/', root)))
   .filter((file) => file.endsWith('.css'))
   .sort()
   .map((file) => `sections/${file}`);
-const styles = ['palettes.css', 'settings.css', 'base.css', 'layout.css', ...sectionStyles];
+const styles = ['palettes.css', 'settings.css', 'base.css', 'layout.css', 'components.css', ...sectionStyles];
 
 const data = JSON.parse(await readFile(new URL('data/resume.json', root), 'utf8'));
 const { meta } = data;

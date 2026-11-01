@@ -23,3 +23,5 @@ export const html = (strings, ...values) =>
   new SafeHtml(strings.reduce((out, string, i) => out + render(values[i - 1]) + string));
 
 export const raw = (value) => new SafeHtml(String(value));
+
+export const strong = (text) => raw(escape(text).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>'));

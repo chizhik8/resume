@@ -1,0 +1,123 @@
+.hero {
+  padding-block: var(--space-7) var(--section-padding);
+}
+
+.hero__inner {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  min-inline-size: 0;
+}
+
+.hero__badges {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.hero__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 0.375rem 0.875rem;
+  border: var(--stroke) solid var(--line);
+  border-radius: var(--radius-pill);
+  font-size: var(--fs-small);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.hero__badge--status {
+  border-color: transparent;
+  background: var(--surface2);
+}
+
+.hero__badge--status::before {
+  content: '';
+  inline-size: 0.5rem;
+  block-size: 0.5rem;
+  border-radius: 50%;
+  background: var(--btn);
+}
+
+.hero__lead {
+  max-inline-size: 35rem;
+  font-size: clamp(var(--fs-lead), 1.6vw, 1.375rem);
+  line-height: 1.5;
+}
+
+.hero__meta {
+  color: var(--muted);
+  font-size: 1rem;
+  --dot-list-gap: 1.125rem;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-block-start: var(--space-2);
+}
+
+.hero__panel {
+  position: relative;
+  overflow: hidden;
+  min-inline-size: 0;
+  padding: var(--space-6) var(--space-4);
+  border-radius: var(--radius-panel);
+  background: var(--panel);
+}
+
+.hero__panel::before,
+.hero__panel::after {
+  content: '';
+  position: absolute;
+}
+
+.hero__panel::before {
+  inset-block-start: -3.75rem;
+  inset-inline-end: -3.75rem;
+  inline-size: 13.75rem;
+  block-size: 13.75rem;
+  border: 2.25rem solid color-mix(in srgb, var(--on-hi) 12%, transparent);
+  border-radius: 50%;
+}
+
+.hero__panel::after {
+  inset-block-end: -4.375rem;
+  inset-inline-start: -2.5rem;
+  inline-size: 11.25rem;
+  block-size: 11.25rem;
+  border-radius: 2.5rem;
+  background: color-mix(in srgb, var(--on-hi) 10%, transparent);
+  rotate: 18deg;
+}
+
+@media (min-width: 47.25em) {
+  .hero {
+    padding-block-start: 4.5rem;
+  }
+
+  .hero__panel {
+    max-inline-size: 36rem;
+    padding: var(--space-7) var(--space-6);
+  }
+}
+
+@media (min-width: 75em) {
+  .hero__inner {
+    grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+    align-items: center;
+    gap: var(--space-8);
+  }
+
+  .hero__panel {
+    max-inline-size: none;
+  }
+}

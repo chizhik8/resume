@@ -16,6 +16,17 @@ test('the first palette is the default in the markup', () => {
 });
 
 for (const lang of meta.langs) {
+  test(`external links on the ${lang} page open in a new tab and say so`, () => {
+    const external = [...pages[lang].matchAll(/<a\b([^>]*)>([\s\S]*?)<\/a>/g)].filter(([, attrs]) =>
+      attrs.includes('href="https:'),
+    );
+    assert.ok(external.length > 0);
+    for (const [, attrs, inner] of external) {
+      assert.ok(attrs.includes('target="_blank"'), attrs);
+      assert.ok(inner.includes(`<span class="visually-hidden"> ${data.ui.newTab[lang]}</span>`), inner);
+    }
+  });
+
   test(`language links on the ${lang} page`, () => {
     const links = [...pages[lang].matchAll(/<a class="lang-switch__link" href="([^"]*)"[^>]*>/g)].map(([tag, href]) => [
       href,
