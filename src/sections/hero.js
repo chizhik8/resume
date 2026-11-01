@@ -41,8 +41,8 @@ export const hero = ({ meta, basics, ui }, { t }) => {
         ${codeCard({
           role: basics.label,
           stack: basics.stack,
+          aiTools: basics.aiTools,
           focus: basics.focus,
-          location: `${basics.location.city.en}, ${basics.location.countryCode}`,
           openToWork: basics.openToWork,
         })}
       </div>

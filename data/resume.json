@@ -51,6 +51,7 @@
     },
     "stack": ["JavaScript", "TypeScript", "React", "Next.js", "Node.js", "REST / GraphQL"],
     "focus": ["UI/UX", "Performance", "Code Quality"],
+    "aiTools": ["Claude Code", "Codex"],
     "profiles": [
       { "network": "LinkedIn", "url": "https://www.linkedin.com/in/yuliia-chyzhkova-580514337" },
       { "network": "GitHub", "url": "https://github.com/chizhik8" },
