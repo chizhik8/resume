@@ -68,7 +68,6 @@ html {
 .header__menu {
   display: flex;
   padding-inline: calc(var(--gutter) - var(--space-3));
-  list-style: none;
 }
 
 .header__link {
@@ -102,7 +101,6 @@ html {
   padding: 0.1875rem;
   border: var(--stroke) solid var(--border);
   border-radius: var(--radius-pill);
-  list-style: none;
 }
 
 .lang-switch__link {
@@ -198,11 +196,6 @@ html {
 
 :root:not([data-menu-open]) .menu[hidden] {
   display: none;
-}
-
-.menu__list {
-  padding: 0;
-  list-style: none;
 }
 
 .menu__link {

@@ -38,12 +38,19 @@
   filter: brightness(1.08);
 }
 
+.chip {
+  padding: var(--space-2) 1.125rem;
+  border: var(--stroke) solid var(--line);
+  border-radius: var(--radius-pill);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
 .profiles {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-2);
-  padding: 0;
-  list-style: none;
 }
 
 .profiles > :nth-child(1) {

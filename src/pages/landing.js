@@ -5,10 +5,11 @@ import { section } from '../components/section.js';
 import { header } from '../sections/header.js';
 import { hero } from '../sections/hero.js';
 import { about } from '../sections/about.js';
+import { skills } from '../sections/skills.js';
 import { footer } from '../sections/footer.js';
 
 const SECTIONS = ['about', 'skills', 'experience', 'projects', 'education', 'timeline', 'contact'];
-const CONTENT = { about };
+const CONTENT = { about, skills };
 
 export const page = (data, lang, { headScript }) => {
   const { meta, seo, ui } = data;

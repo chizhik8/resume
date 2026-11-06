@@ -93,12 +93,10 @@
   "skills": [
     {
       "name": { "en": "Core", "uk": "Основне" },
-      "featured": true,
       "keywords": ["React", "Next.js", "TypeScript", "JavaScript"]
     },
     {
       "name": { "en": "Layout and UI", "uk": "Верстка і UI" },
-      "featured": true,
       "keywords": [
         "HTML5",
         "CSS3",
@@ -110,22 +108,18 @@
     },
     {
       "name": { "en": "Data and APIs", "uk": "Дані і API" },
-      "featured": false,
       "keywords": ["REST", "GraphQL", "TanStack Query", "Apollo Client", "i18next"]
     },
     {
       "name": { "en": "Architecture and infrastructure", "uk": "Архітектура і інфраструктура" },
-      "featured": false,
       "keywords": ["Webpack Module Federation", "Node.js", "AWS", "Docker", "CI/CD"]
     },
     {
       "name": { "en": "Quality and monitoring", "uk": "Якість і моніторинг" },
-      "featured": false,
       "keywords": ["Playwright", "React Testing Library", "Sentry", "Mixpanel"]
     },
     {
       "name": { "en": "Process and tools", "uk": "Процес і інструменти" },
-      "featured": false,
       "keywords": ["Agile", "Claude Code", "Codex"]
     }
   ],
@@ -382,18 +376,6 @@
         "workFormat": { "en": "Work format", "uk": "Формат роботи" },
         "experience": { "en": "Experience", "uk": "Досвід" }
       }
-    },
-    "skills": {
-      "showAll": {
-        "en": { "one": "Show all skills ({n} more group)", "other": "Show all skills ({n} more groups)" },
-        "uk": {
-          "one": "Показати всі навички (ще {n} група)",
-          "few": "Показати всі навички (ще {n} групи)",
-          "many": "Показати всі навички (ще {n} груп)",
-          "other": "Показати всі навички (ще {n} групи)"
-        }
-      },
-      "collapse": { "en": "Collapse", "uk": "Згорнути" }
     },
     "experience": {
       "remote": { "en": "Remote", "uk": "Віддалено" },

@@ -4,10 +4,12 @@
 }
 
 .section {
+  --card-bg: var(--surface);
   padding-block: var(--section-padding);
 }
 
 .section--alt {
+  --card-bg: var(--bg);
   background: var(--surface);
 }
 

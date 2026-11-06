@@ -65,7 +65,7 @@ export const header = ({ meta, basics, ui }, { lang, t, defaultPalette }) => {
       </div>
       <div class="menu" id="menu" hidden>
         <nav aria-label="${t(menu.label)}">
-          <ul class="menu__list">
+          <ul>
             ${ui.nav.map(
               (id) => html`<li>
                 <a class="menu__link" href="#${id}">
