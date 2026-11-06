@@ -4,9 +4,11 @@ import { assetPath } from '../lib/paths.js';
 import { section } from '../components/section.js';
 import { header } from '../sections/header.js';
 import { hero } from '../sections/hero.js';
+import { about } from '../sections/about.js';
 import { footer } from '../sections/footer.js';
 
 const SECTIONS = ['about', 'skills', 'experience', 'projects', 'education', 'timeline', 'contact'];
+const CONTENT = { about };
 
 export const page = (data, lang, { headScript }) => {
   const { meta, seo, ui } = data;
@@ -40,6 +42,7 @@ export const page = (data, lang, { headScript }) => {
           number: ui.sections[id].number,
           title: t(ui.sections[id].title),
           alt: i % 2 === 0,
+          content: CONTENT[id]?.(data, { t }),
         }),
       )}
     </main>
