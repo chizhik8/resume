@@ -3,4 +3,12 @@
   border-block-start: 1px solid var(--border);
   color: var(--muted);
   font-size: var(--fs-small);
+  --logo-size: 1.5rem;
+}
+
+.footer__owner {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  vertical-align: top;
 }

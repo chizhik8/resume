@@ -111,7 +111,9 @@ a {
 
 :root:not([data-js]) .js-only,
 [data-theme='dark'] .only-light,
-[data-theme='light'] .only-dark {
+[data-theme='light'] .only-dark,
+[aria-expanded='false'] .only-expanded,
+[aria-expanded='true'] .only-collapsed {
   display: none;
 }
 

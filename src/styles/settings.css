@@ -9,6 +9,7 @@
   --fs-body: 1.0625rem;
   --fs-small: 0.9375rem;
   --fs-label: 0.875rem;
+  --fs-caption: 0.8125rem;
 
   --lh-display: 1.02;
   --lh-heading: 1.15;
@@ -31,6 +32,7 @@
   --radius-card: 1.25rem;
   --radius-panel: 2rem;
   --radius-pill: 999px;
+  --radius-tag: 0.5rem;
   --stroke: 1.5px;
 
   --hit: 2.75rem;

@@ -29,8 +29,8 @@
     "initials": { "en": "YC", "uk": "ЮЧ" },
     "label": "Software Engineer",
     "headline": {
-      "en": "I bring passion, precision, and responsibility to every project and deliver well-considered, reliable solutions on time",
-      "uk": "У кожен проєкт я вкладаю ентузіазм, точність і відповідальність, а також вчасно надаю добре продумані й надійні рішення"
+      "en": "I bring passion and responsibility to every project and deliver well-considered, reliable solutions on time",
+      "uk": "У кожен проєкт я вкладаю ентузіазм і відповідальність та вчасно надаю добре продумані й надійні рішення"
     },
     "email": "for.yu.ch@gmail.com",
     "phones": [
@@ -93,7 +93,7 @@
   "skills": [
     {
       "name": { "en": "Core", "uk": "Основне" },
-      "keywords": ["React", "Next.js", "TypeScript", "JavaScript"]
+      "keywords": ["React", "Next.js", "TypeScript", "JavaScript", "Node.js"]
     },
     {
       "name": { "en": "Layout and UI", "uk": "Верстка і UI" },
@@ -112,7 +112,7 @@
     },
     {
       "name": { "en": "Architecture and infrastructure", "uk": "Архітектура і інфраструктура" },
-      "keywords": ["Webpack Module Federation", "Node.js", "AWS", "Docker", "CI/CD"]
+      "keywords": ["Webpack Module Federation", "AWS", "Docker", "CI/CD"]
     },
     {
       "name": { "en": "Quality and monitoring", "uk": "Якість і моніторинг" },
@@ -165,7 +165,8 @@
           "en": "Worked closely with Product Owners, Backend Developers and QA Engineers through refinement, development, testing and release.",
           "uk": "Тісно працювала з Product Owner, бекенд-розробниками і QA на всіх етапах: уточнення, розробка, тестування, реліз."
         }
-      ]
+      ],
+      "stack": ["React", "TypeScript", "GraphQL", "REST", "TanStack Query", "Apollo Client", "Sentry", "AWS"]
     },
     {
       "id": "softserve",
@@ -199,7 +200,8 @@
           "en": "Collaborated with developers and other project team members throughout implementation, testing and delivery.",
           "uk": "Працювала з розробниками та іншими учасниками команди від реалізації до тестування і здачі."
         }
-      ]
+      ],
+      "stack": ["React", "Next.js", "TypeScript", "JavaScript", "REST", "Strapi"]
     }
   ],
 

@@ -14,5 +14,5 @@ export const createT = (lang) => {
     return t(byRule[rules.select(n)] ?? byRule.other, { n });
   };
 
-  return { t, plural };
+  return { lang, t, plural };
 };

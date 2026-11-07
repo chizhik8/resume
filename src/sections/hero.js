@@ -3,6 +3,7 @@ import { rootFilePath } from '../lib/paths.js';
 import { arrow, download } from '../components/icons.js';
 import { codeCard } from '../components/code-card.js';
 import { profiles } from '../components/profiles.js';
+import { dot } from '../components/dot-list.js';
 
 export const hero = ({ meta, basics, ui }, { t }) => {
   const labels = ui.hero.metaLabels;
@@ -27,7 +28,7 @@ export const hero = ({ meta, basics, ui }, { t }) => {
           ${facts.map(
             ([label, value], i) => html`<div>
               <dt class="visually-hidden">${t(label)}</dt>
-              <dd>${value}${i < facts.length - 1 && html`<span class="dot-list__dot" aria-hidden="true">·</span>`}</dd>
+              <dd>${value}${i < facts.length - 1 && dot('·')}</dd>
             </div>`,
           )}
         </dl>

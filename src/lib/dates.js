@@ -3,7 +3,15 @@ const DATE = /^(19|20)\d{2}-(0[1-9]|1[0-2])(-(0[1-9]|[12]\d|3[01]))?$/;
 
 export const isDate = (value) => typeof value === 'string' && DATE.test(value);
 
-export const formatYear = (value) => value.split('-')[0];
+const monthIndex = (value) => {
+  const [year, month] = value.split('-');
+  return year * 12 + (month - 1);
+};
+
+export const duration = (start, end) => {
+  const months = monthIndex(end) - monthIndex(start) + 1;
+  return { years: Math.floor(months / 12), months: months % 12 };
+};
 
 export const formatMonth = (value, lang) => {
   const [year, month] = value.split('-');

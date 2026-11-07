@@ -6,14 +6,16 @@ import { header } from '../sections/header.js';
 import { hero } from '../sections/hero.js';
 import { about } from '../sections/about.js';
 import { skills } from '../sections/skills.js';
+import { experience } from '../sections/experience.js';
 import { footer } from '../sections/footer.js';
 
 const SECTIONS = ['about', 'skills', 'experience', 'projects', 'education', 'timeline', 'contact'];
-const CONTENT = { about, skills };
+const CONTENT = { about, skills, experience };
 
 export const page = (data, lang, { headScript }) => {
   const { meta, seo, ui } = data;
-  const { t } = createT(lang);
+  const i18n = createT(lang);
+  const { t } = i18n;
   const asset = (file) => assetPath(meta, file);
   const palettes = Object.keys(ui.palette.names);
   const [defaultPalette] = palettes;
@@ -34,20 +36,20 @@ export const page = (data, lang, { headScript }) => {
     <script type="module" src="${asset('scripts/main.js')}"></script>
   </head>
   <body>
-    ${header(data, { lang, t, defaultPalette })}
+    ${header(data, { ...i18n, defaultPalette })}
     <main id="main">
-      ${hero(data, { t })}
+      ${hero(data, i18n)}
       ${SECTIONS.map((id, i) =>
         section({
           id,
           number: ui.sections[id].number,
           title: t(ui.sections[id].title),
           alt: i % 2 === 0,
-          content: CONTENT[id]?.(data, { t }),
+          content: CONTENT[id]?.(data, i18n),
         }),
       )}
     </main>
-    ${footer(data, { lang, t })}
+    ${footer(data, i18n)}
   </body>
 </html>
 `;
