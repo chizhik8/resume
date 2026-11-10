@@ -34,7 +34,7 @@ for (const lang of meta.langs) {
     assert.deepEqual(links, [
       ['button button--primary', `mailto:${data.basics.email}`, false],
       ['button button--outline', meta.basePath + meta.pdf[lang], true],
-      ...data.basics.profiles.map(({ url }) => ['button profiles__link', url, false]),
+      ...data.basics.profiles.map(({ url }) => ['button button--compact profiles__link', url, false]),
     ]);
   });
 }

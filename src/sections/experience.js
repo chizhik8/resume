@@ -2,6 +2,7 @@ import { html } from '../lib/html.js';
 import { duration, formatMonth } from '../lib/dates.js';
 import { chevron } from '../components/icons.js';
 import { dot } from '../components/dot-list.js';
+import { tagList } from '../components/tag-list.js';
 
 export const experience = ({ work, ui: { experience: labels, projects: { stackLabel } } }, { lang, t }) => {
   const date = (value) => html`<time datetime="${value}">${formatMonth(value, lang)}</time>`;
@@ -38,9 +39,7 @@ export const experience = ({ work, ui: { experience: labels, projects: { stackLa
           <ul class="job__highlights">
             ${highlights.map((highlight) => html`<li>${t(highlight)}</li>`)}
           </ul>
-          <ul class="job__stack" aria-label="${t(stackLabel)}">
-            ${stack.map((item) => html`<li class="tag">${item}</li>`)}
-          </ul>
+          ${tagList(stack, { label: t(stackLabel), className: 'job__stack' })}
         </div>
       </article>
     </li>`,

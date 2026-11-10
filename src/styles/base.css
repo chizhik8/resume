@@ -60,10 +60,14 @@ ol {
 h1,
 h2,
 h3 {
-  font-family: var(--font-heading);
   font-weight: 700;
   line-height: var(--lh-heading);
   text-wrap: balance;
+}
+
+h1,
+h2 {
+  font-family: var(--font-heading);
 }
 
 h1 {

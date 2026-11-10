@@ -1,6 +1,6 @@
 import { html } from '../lib/html.js';
 
-export const skills = ({ skills: groups }, { t }) => html`<ul class="skills">
+export const skills = ({ skills: groups }, { t }) => html`<ul class="skills card-grid">
   ${groups.map(
     ({ name, keywords }) => html`<li class="skills__group">
       <h3 class="skills__name">${t(name)}</h3>

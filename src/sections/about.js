@@ -1,7 +1,7 @@
 import { html } from '../lib/html.js';
 
 export const about = ({ about: { stats, paragraphs } }, { t }) => html`<div class="about">
-  <ul class="about__stats">
+  <ul class="about__stats card-grid">
     ${stats.map(
       ({ value, unit, label }) => html`<li class="about__stat">
         <span class="about__value">${value}</span>

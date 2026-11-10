@@ -7,10 +7,11 @@ import { hero } from '../sections/hero.js';
 import { about } from '../sections/about.js';
 import { skills } from '../sections/skills.js';
 import { experience } from '../sections/experience.js';
+import { projects } from '../sections/projects.js';
 import { footer } from '../sections/footer.js';
 
 const SECTIONS = ['about', 'skills', 'experience', 'projects', 'education', 'timeline', 'contact'];
-const CONTENT = { about, skills, experience };
+const CONTENT = { about, skills, experience, projects };
 
 export const page = (data, lang, { headScript }) => {
   const { meta, seo, ui } = data;

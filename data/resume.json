@@ -118,7 +118,7 @@
     },
     {
       "name": { "en": "Process and tools", "uk": "Процес і інструменти" },
-      "keywords": ["Agile", "Figma","Claude Code", "Codex"]
+      "keywords": ["Agile", "Scrum", "Figma", "Claude Code", "Codex"]
     }
   ],
 
@@ -136,24 +136,28 @@
       },
       "highlights": [
         {
-          "en": "Delivered features end-to-end, from requirements refinement and implementation to testing, release and production support [… features per year].",
-          "uk": "Вела функціонал від уточнення вимог і реалізації до тестування, релізу і підтримки в продакшні [… фіч за рік]."
+          "en": "Delivered features end-to-end, from requirements refinement and implementation to testing, release and production support.",
+          "uk": "Вела функціонал від уточнення вимог і реалізації до тестування, релізу і підтримки в продакшні."
         },
         {
           "en": "Investigated and resolved functional and production issues using Sentry.",
           "uk": "Розслідувала і виправляла помилки в продакшні за даними Sentry."
         },
         {
-          "en": "Refactored legacy code to improve maintainability, readability and performance [… how much faster].",
-          "uk": "Рефакторила легасі-код, щоб пришвидшити застосунок і спростити підтримку [… на скільки швидше]."
+          "en": "Refactored legacy code to improve maintainability, readability and performance.",
+          "uk": "Рефакторила легасі-код, щоб пришвидшити застосунок і спростити підтримку."
+        },
+        {
+          "en": "Worked within a micro-frontend architecture built on Webpack Module Federation, using a shared UI toolkit library across the micro-frontends.",
+          "uk": "Працювала в мікрофронтендній архітектурі на Webpack Module Federation зі спільною для мікрофронтендів бібліотекою UI-компонентів (UI toolkit)."
         },
         {
           "en": "Integrated the frontend with REST and GraphQL APIs, using TanStack Query and Apollo Client for asynchronous and server-state management.",
           "uk": "Інтегрувала фронтенд з REST і GraphQL API через TanStack Query і Apollo Client для асинхронних даних і стану сервера."
         },
         {
-          "en": "Wrote unit and integration tests to strengthen code quality and stability [… coverage, if known].",
-          "uk": "Писала unit- і інтеграційні тести для якості та стабільності коду [… покриття, якщо відоме]."
+          "en": "Wrote unit and integration tests to strengthen code quality and stability.",
+          "uk": "Писала unit- і інтеграційні тести для якості та стабільності коду."
         },
         {
           "en": "Took part in application releases in an AWS-based CI/CD environment.",
@@ -164,7 +168,7 @@
           "uk": "Тісно працювала з Product Owner, бекенд-розробниками і QA на всіх етапах: уточнення, розробка, тестування, реліз."
         }
       ],
-      "stack": ["React", "JavaScript","TypeScript", "Tailwind CSS", "GraphQL", "REST", "TanStack Query", "Apollo Client", "Sentry", "AWS", "Playwright", "React Testing Library", "i18next", "Webpack Module Federation"]
+      "stack": ["React", "JavaScript", "TypeScript", "Tailwind CSS", "Material UI", "GraphQL", "REST", "TanStack Query", "Apollo Client", "Sentry", "Mixpanel", "AWS", "Docker", "CI/CD", "GitHub", "Playwright", "React Testing Library", "i18next", "Webpack Module Federation", "Figma", "Scrum"]
     },
     {
       "id": "softserve",
@@ -183,8 +187,8 @@
           "uk": "Розробляла фронтенд на React, Next.js, TypeScript і JavaScript."
         },
         {
-          "en": "Implemented responsive user interfaces based on design and product requirements [… how many pages].",
-          "uk": "Верстала адаптивні інтерфейси за макетами і вимогами продукту [… скільки сторінок]."
+          "en": "Implemented responsive user interfaces based on design and product requirements.",
+          "uk": "Верстала адаптивні інтерфейси за макетами і вимогами продукту."
         },
         {
           "en": "Connected Strapi CMS and REST APIs so museum staff could update the content themselves.",
@@ -199,7 +203,7 @@
           "uk": "Працювала з розробниками та іншими учасниками команди від реалізації до тестування і здачі."
         }
       ],
-      "stack": ["React", "Next.js", "TypeScript", "JavaScript", "REST", "Strapi"]
+      "stack": ["Next.js", "TypeScript", "JavaScript", "CSS3", "REST", "Strapi", "GitHub", "Figma", "Agile"]
     }
   ],
 
@@ -211,11 +215,11 @@
         "en": "Augmented reality educational platform. Delivered features from requirements to production and refactored legacy code.",
         "uk": "Освітня платформа з доповненою реальністю. Вела фічі від вимог до продакшну і рефакторила легасі."
       },
-      "keywords": ["React", "TypeScript", "GraphQL", "AWS"],
+      "keywords": ["React", "TypeScript", "Tailwind CSS", "Material UI", "GraphQL", "Webpack Module Federation", "AWS"],
       "url": "https://arbook.info/",
       "repository": null,
       "nda": true,
-      "image": "/src/assets/images/arbook.png",
+      "image": "ar-book",
       "imageAlt": { "en": "AR Book screenshot", "uk": "Скріншот AR Book" }
     },
     {
@@ -228,11 +232,11 @@
         "en": "Public museum website with dynamic content from Strapi CMS.",
         "uk": "Публічний сайт музею з динамічним контентом зі Strapi CMS."
       },
-      "keywords": ["Next.js", "TypeScript", "Strapi"],
-      "url": null,
+      "keywords": ["Next.js", "TypeScript", "CSS3", "Strapi", "REST"],
+      "url": "https://nmiu.org/",
       "repository": null,
       "nda": true,
-      "image": "/src/assets/images/museum.png",
+      "image": "nmiu",
       "imageAlt": { "en": "Museum website screenshot", "uk": "Скріншот сайту музею" }
     }
   ],

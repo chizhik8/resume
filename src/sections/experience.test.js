@@ -14,7 +14,7 @@ const jobs = (lang) =>
     panel: job.match(/<div class="job__details" id="([^"]+)">/)[1],
     stack: [
       ...job
-        .match(/<div class="job__details"[\s\S]*<ul class="job__stack"[^>]*>([\s\S]*?)<\/ul>\s*<\/div>\s*$/)[1]
+        .match(/<div class="job__details"[\s\S]*<ul class="job__stack[^"]*"[^>]*>([\s\S]*?)<\/ul>\s*<\/div>\s*$/)[1]
         .matchAll(/<li class="tag">([^<]+)<\/li>/g),
     ].map(([, item]) => item),
   }));

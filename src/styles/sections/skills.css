@@ -1,9 +1,3 @@
-.skills {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18.75rem), 1fr));
-  gap: var(--space-4);
-}
-
 .skills__group {
   display: flex;
   flex-direction: column;
@@ -15,7 +9,6 @@
 }
 
 .skills__name {
-  font-family: var(--font-body);
   font-size: var(--fs-small);
   color: var(--muted);
   text-transform: uppercase;
