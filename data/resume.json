@@ -29,8 +29,8 @@
     "initials": { "en": "YC", "uk": "ЮЧ" },
     "label": "Software Engineer",
     "headline": {
-      "en": "I bring passion and responsibility to every project and deliver well-considered, reliable solutions on time",
-      "uk": "У кожен проєкт я вкладаю ентузіазм і відповідальність та вчасно надаю добре продумані й надійні рішення"
+      "en": " I bring passion and responsibility to every project, delivering well-considered, reliable solutions on time.",
+      "uk": "Я підходжу до кожного проєкту з ентузіазмом і відповідальністю, вчасно надаючи продумані та надійні рішення."
     },
     "email": "for.yu.ch@gmail.com",
     "phones": [
@@ -80,8 +80,8 @@
     ],
     "paragraphs": [
       {
-        "en": "Frontend developer with hands-on experience building and maintaining web platforms. I deliver features from requirements refinement to release, resolve production issues and refactor legacy code for better performance and maintainability.",
-        "uk": "Frontend-розробниця з практичним досвідом розробки та підтримки веб-платформ. Веду функціонал від уточнення вимог до релізу, розбираюся з проблемами в продакшні та рефакторю легасі-код заради швидкодії та зручності підтримки."
+        "en": "Frontend Software Engineer with commerce experience in building and maintaining web platforms. I implement functionality—from requirement clarification to release. Troubleshoot issues in live environments and refactor legacy code to improve performance and maintainability.",
+        "uk": "Frontend Software Engineer з комерційним досвідом розробки та підтримки веб-платформ. Реалізую функціонал від уточнення вимог до релізу. Виправляю помилки в робочому середовищі та рефакторю застарілий код, щоб покращити продуктивність і зручність його підтримки."
       },
       {
         "en": "My strengths are REST and GraphQL API integration, testing and close collaboration with Product, Backend and QA. I care about stable, user-friendly features and calm releases in AWS CI/CD.",
@@ -101,9 +101,7 @@
         "HTML5",
         "CSS3",
         "Tailwind CSS",
-        "Material UI",
-        { "en": "Responsive Web Design", "uk": "Адаптивна верстка" },
-        "Figma"
+        "Material UI"
       ]
     },
     {
@@ -112,7 +110,7 @@
     },
     {
       "name": { "en": "Architecture and infrastructure", "uk": "Архітектура і інфраструктура" },
-      "keywords": ["Webpack Module Federation", "AWS", "Docker", "CI/CD"]
+      "keywords": ["Webpack Module Federation", "AWS", "Docker", "CI/CD", "GitHub", "Strapi"]
     },
     {
       "name": { "en": "Quality and monitoring", "uk": "Якість і моніторинг" },
@@ -120,7 +118,7 @@
     },
     {
       "name": { "en": "Process and tools", "uk": "Процес і інструменти" },
-      "keywords": ["Agile", "Claude Code", "Codex"]
+      "keywords": ["Agile", "Figma","Claude Code", "Codex"]
     }
   ],
 
@@ -166,7 +164,7 @@
           "uk": "Тісно працювала з Product Owner, бекенд-розробниками і QA на всіх етапах: уточнення, розробка, тестування, реліз."
         }
       ],
-      "stack": ["React", "TypeScript", "GraphQL", "REST", "TanStack Query", "Apollo Client", "Sentry", "AWS"]
+      "stack": ["React", "JavaScript","TypeScript", "Tailwind CSS", "GraphQL", "REST", "TanStack Query", "Apollo Client", "Sentry", "AWS", "Playwright", "React Testing Library", "i18next", "Webpack Module Federation"]
     },
     {
       "id": "softserve",
@@ -214,10 +212,10 @@
         "uk": "Освітня платформа з доповненою реальністю. Вела фічі від вимог до продакшну і рефакторила легасі."
       },
       "keywords": ["React", "TypeScript", "GraphQL", "AWS"],
-      "url": null,
+      "url": "https://arbook.info/",
       "repository": null,
       "nda": true,
-      "image": null,
+      "image": "/src/assets/images/arbook.png",
       "imageAlt": { "en": "AR Book screenshot", "uk": "Скріншот AR Book" }
     },
     {
@@ -234,36 +232,8 @@
       "url": null,
       "repository": null,
       "nda": true,
-      "image": null,
+      "image": "/src/assets/images/museum.png",
       "imageAlt": { "en": "Museum website screenshot", "uk": "Скріншот сайту музею" }
-    },
-    {
-      "id": "resume-site",
-      "name": { "en": "This resume website", "uk": "Цей сайт-резюме" },
-      "description": {
-        "en": "A bilingual page with light and dark themes and a PDF version, all generated from one data file. Lighthouse target: 95+.",
-        "uk": "Двомовна сторінка зі світлою і темною темами та PDF-версією з одного файлу даних. Ціль Lighthouse: 95+."
-      },
-      "keywords": ["HTML", "CSS", "JavaScript", "Node.js", "GitHub Pages", "a11y"],
-      "url": "https://chizhik8.github.io/resume/",
-      "repository": "https://github.com/chizhik8/resume",
-      "nda": false,
-      "image": null,
-      "imageAlt": {
-        "en": "Lighthouse report for this website",
-        "uk": "Звіт Lighthouse цього сайту"
-      }
-    },
-    {
-      "id": "own-project",
-      "name": null,
-      "description": null,
-      "keywords": ["[…]"],
-      "url": null,
-      "repository": null,
-      "nda": false,
-      "image": null,
-      "imageAlt": { "en": "[…] screenshot", "uk": "Скріншот […]" }
     }
   ],
 
@@ -277,14 +247,6 @@
       "institution": "GoIT",
       "studyType": { "en": "Course", "uk": "Курс" },
       "area": "Full Stack Developer: React, Node.js"
-    },
-    {
-      "institution": {
-        "en": "Simon Kuznets Kharkiv National University of Economics",
-        "uk": "ХНЕУ ім. С. Кузнеця"
-      },
-      "studyType": { "en": "Master's degree", "uk": "Магістр" },
-      "area": { "en": "Accounting and Auditing", "uk": "Облік і аудит" }
     }
   ],
 
