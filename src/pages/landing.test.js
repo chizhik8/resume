@@ -35,4 +35,19 @@ for (const lang of meta.langs) {
     const row = meta.langs.map((code) => [pagePath(meta, code), code === lang]);
     assert.deepEqual(links, [...row, ...row]);
   });
+
+  const ids = [...pages[lang].matchAll(/\sid="([^"]+)"/g)].map(([, id]) => id);
+
+  test(`ids on the ${lang} page are unique`, () => {
+    assert.deepEqual(
+      ids.filter((id, i) => ids.indexOf(id) !== i),
+      [],
+    );
+  });
+
+  test(`aria-labelledby on the ${lang} page points to an existing id`, () => {
+    const refs = [...pages[lang].matchAll(/\saria-labelledby="([^"]+)"/g)].flatMap(([, value]) => value.split(/\s+/));
+    assert.ok(refs.length > 0);
+    for (const ref of refs) assert.equal(ids.filter((id) => id === ref).length, 1, ref);
+  });
 }

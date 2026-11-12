@@ -1,11 +1,11 @@
 import { html } from '../lib/html.js';
-import { duration, formatMonth } from '../lib/dates.js';
+import { duration } from '../lib/dates.js';
 import { chevron } from '../components/icons.js';
 import { dot } from '../components/dot-list.js';
+import { period } from '../components/period.js';
 import { tagList } from '../components/tag-list.js';
 
 export const experience = ({ work, ui: { experience: labels, projects: { stackLabel } } }, { lang, t }) => {
-  const date = (value) => html`<time datetime="${value}">${formatMonth(value, lang)}</time>`;
   const formatDuration = (start, end) => {
     const { years, months } = duration(start, end);
     return [years && t(labels.duration.years, { n: years }), months && t(labels.duration.months, { n: months })]
@@ -23,7 +23,7 @@ export const experience = ({ work, ui: { experience: labels, projects: { stackLa
             <p class="job__meta dot-list">
               <span>${name}${dot('|')}</span>
               ${remote && html`<span>${t(labels.remote)}${dot('|')}</span>`}
-              <span class="job__dates">${date(startDate)} – ${date(endDate)}</span>
+              <span class="job__dates">${period(startDate, endDate, lang)}</span>
             </p>
           </div>
           <span class="job__duration">${formatDuration(startDate, endDate)}</span>

@@ -244,32 +244,34 @@
   "education": [
     {
       "institution": "SoftServe IT Academy",
-      "studyType": { "en": "Course", "uk": "Курс" },
-      "area": "Web UI · React Marathon"
+      "area": "Web UI · React Marathon",
+      "startDate": "2021-12",
+      "endDate": "2022-02"
     },
     {
       "institution": "GoIT",
-      "studyType": { "en": "Course", "uk": "Курс" },
-      "area": "Full Stack Developer: React, Node.js"
+      "area": "Full Stack Developer: React, Node.js",
+      "startDate": "2020-09",
+      "endDate": "2021-07"
     }
   ],
 
   "languages": [
     {
       "language": { "en": "Ukrainian", "uk": "Українська" },
-      "fluency": { "en": "Native", "uk": "рідна" },
+      "fluency": { "en": "Native", "uk": "Рідна" },
       "level": 100
     },
     {
       "language": { "en": "English", "uk": "Англійська" },
-      "fluency": { "en": "Full professional", "uk": "вільна професійна" },
-      "cefr": null,
+      "fluency": { "en": "Professional", "uk": "Професійна" },
+      "cefr": "B1/B2",
       "level": 75
     },
     {
       "language": { "en": "Polish", "uk": "Польська" },
-      "fluency": { "en": "Elementary", "uk": "базова" },
-      "cefr": null,
+      "fluency": { "en": "Elementary", "uk": "Базова" },
+      "cefr": "A1/A2",
       "level": 25
     }
   ],
@@ -319,7 +321,7 @@
       "skills": { "number": "02", "title": { "en": "Skills", "uk": "Навички" } },
       "experience": { "number": "03", "title": { "en": "Experience", "uk": "Досвід" } },
       "projects": { "number": "04", "title": { "en": "Projects", "uk": "Проєкти" } },
-      "education": { "number": "05", "title": { "en": "Education and courses", "uk": "Освіта і курси" } },
+      "education": { "number": "05", "title": { "en": "Education", "uk": "Освіта" } },
       "languages": { "number": "06", "title": { "en": "Languages", "uk": "Мови" } },
       "timeline": { "number": "07", "title": { "en": "Timeline", "uk": "Таймлайн" } },
       "contact": { "number": "08", "title": { "en": "Let’s get acquainted", "uk": "Давайте познайомимося" } }
