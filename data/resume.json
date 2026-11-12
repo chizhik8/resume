@@ -321,10 +321,10 @@
       "skills": { "number": "02", "title": { "en": "Skills", "uk": "Навички" } },
       "experience": { "number": "03", "title": { "en": "Experience", "uk": "Досвід" } },
       "projects": { "number": "04", "title": { "en": "Projects", "uk": "Проєкти" } },
-      "education": { "number": "05", "title": { "en": "Education", "uk": "Освіта" } },
-      "languages": { "number": "06", "title": { "en": "Languages", "uk": "Мови" } },
-      "timeline": { "number": "07", "title": { "en": "Timeline", "uk": "Таймлайн" } },
-      "contact": { "number": "08", "title": { "en": "Let’s get acquainted", "uk": "Давайте познайомимося" } }
+      "education": { "number": "05", "title": { "en": "Education and languages", "uk": "Освіта і мови" } },
+      "languages": { "title": { "en": "Languages", "uk": "Мови" } },
+      "timeline": { "number": "06", "title": { "en": "Timeline", "uk": "Таймлайн" } },
+      "contact": { "number": "07", "title": { "en": "Let’s get acquainted", "uk": "Давайте познайомимося" } }
     },
     "nav": ["about", "skills", "experience", "projects", "timeline", "contact"],
     "navLabels": {

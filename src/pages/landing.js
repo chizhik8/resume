@@ -9,11 +9,11 @@ import { skills } from '../sections/skills.js';
 import { experience } from '../sections/experience.js';
 import { projects } from '../sections/projects.js';
 import { education } from '../sections/education.js';
+import { timeline } from '../sections/timeline.js';
 import { footer } from '../sections/footer.js';
 
 const SECTIONS = ['about', 'skills', 'experience', 'projects', 'education', 'timeline', 'contact'];
-const CONTENT = { about, skills, experience, projects, education };
-const OWN_HEAD = ['education'];
+const CONTENT = { about, skills, experience, projects, education, timeline };
 
 export const page = (data, lang, { headScript }) => {
   const { meta, seo, ui } = data;
@@ -48,7 +48,6 @@ export const page = (data, lang, { headScript }) => {
           number: ui.sections[id].number,
           title: t(ui.sections[id].title),
           alt: i % 2 === 0,
-          head: !OWN_HEAD.includes(id),
           content: CONTENT[id]?.(data, i18n),
         }),
       )}

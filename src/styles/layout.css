@@ -28,8 +28,3 @@
   font-weight: 500;
   color: var(--accent-ink);
 }
-
-.section__title {
-  font-family: var(--font-heading);
-  font-size: var(--fs-h2);
-}

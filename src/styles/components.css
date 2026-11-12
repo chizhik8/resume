@@ -60,6 +60,13 @@
   --card-grid-gap: var(--space-4);
 }
 
+.card-label {
+  font-size: var(--fs-small);
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
 .chip {
   padding: var(--space-2) 1.125rem;
   border: var(--stroke) solid var(--line);

@@ -8,13 +8,6 @@
   background: var(--card-bg);
 }
 
-.skills__name {
-  font-size: var(--fs-small);
-  color: var(--muted);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
 .skills__chips {
   display: flex;
   flex-wrap: wrap;

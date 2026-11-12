@@ -34,6 +34,16 @@ export const external = raw(`<svg viewBox="0 0 24 24" width="15" height="15" ari
   <path d="M7 17L17 7M9 7h8v8"/>
 </svg>`);
 
+export const briefcase = raw(`<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="3" y="7" width="18" height="13" rx="2"/>
+  <path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/>
+</svg>`);
+
+export const graduationCap = raw(`<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M2 9l10-5 10 5-10 5z"/>
+  <path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5M22 9v6"/>
+</svg>`);
+
 export const arrow = raw(`<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
   <path d="M5 12h14M13 6l6 6-6 6"/>
 </svg>`);
