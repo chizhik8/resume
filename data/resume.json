@@ -323,7 +323,7 @@
       "projects": { "title": { "en": "Projects", "uk": "Проєкти" } },
       "education": { "title": { "en": "Education and languages", "uk": "Освіта і мови" } },
       "timeline": { "title": { "en": "Timeline", "uk": "Таймлайн" } },
-      "contact": { "title": { "en": "Let’s get acquainted", "uk": "Давайте познайомимося" } }
+      "contact": { "title": { "en": "Let’s connect", "uk": "Будьмо на зв’язку" } }
     },
     "nav": ["about", "skills", "experience", "projects", "timeline", "contact"],
     "navLabels": {
@@ -370,8 +370,8 @@
     },
     "contact": {
       "text": {
-        "en": "I’m looking for a Software Engineer role in Wrocław or remote. The fastest way to reach me is email or LinkedIn.",
-        "uk": "Шукаю позицію Software Engineer у Вроцлаві або віддалено. Найшвидше відповідаю на email і в LinkedIn."
+        "en": "I’m open to new opportunities and collaborations. Have a project in mind or a team I could contribute to? Let’s talk.",
+        "uk": "Я відкрита до нових можливостей і співпраці. Маєте ідею проєкту або шукаєте розробницю до команди? Буду рада обговорити деталі."
       },
       "copy": { "en": "Copy email", "uk": "Скопіювати email" },
       "copied": { "en": "Copied", "uk": "Скопійовано" },
