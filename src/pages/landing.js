@@ -13,8 +13,9 @@ import { timeline } from '../sections/timeline.js';
 import { contact } from '../sections/contact.js';
 import { footer } from '../sections/footer.js';
 
-const SECTIONS = ['about', 'skills', 'experience', 'projects', 'education', 'timeline', 'contact'];
-const CONTENT = { about, skills, experience, projects, education, timeline, contact };
+const SECTIONS = Object.entries({ about, skills, experience, projects, education, timeline, contact });
+
+const NUMBERS = Object.fromEntries(SECTIONS.map(([id], i) => [id, String(i + 1).padStart(2, '0')]));
 
 export const page = (data, lang, { headScript }) => {
   const { meta, seo, ui } = data;
@@ -40,17 +41,16 @@ export const page = (data, lang, { headScript }) => {
     <script type="module" src="${asset('scripts/main.js')}"></script>
   </head>
   <body>
-    ${header(data, { ...i18n, defaultPalette })}
+    ${header(data, { ...i18n, defaultPalette, numbers: NUMBERS })}
     <main id="main">
       ${hero(data, i18n)}
-      ${SECTIONS.map((id, i) =>
+      ${SECTIONS.map(([id, content], i) =>
         section({
           id,
-          number: ui.sections[id].number,
+          number: NUMBERS[id],
           title: t(ui.sections[id].title),
           alt: i % 2 === 0,
-          panel: id === 'contact',
-          content: CONTENT[id]?.(data, i18n),
+          content: content(data, i18n),
         }),
       )}
     </main>

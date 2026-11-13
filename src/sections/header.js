@@ -2,7 +2,7 @@ import { html } from '../lib/html.js';
 import { pagePath } from '../lib/paths.js';
 import { burger, close, logo, moon, sun } from '../components/icons.js';
 
-export const header = ({ meta, basics, ui }, { lang, t, defaultPalette }) => {
+export const header = ({ meta, basics, ui }, { lang, t, defaultPalette, numbers }) => {
   const name = t(basics.name);
   const { langSwitch, palette, theme, menu } = ui;
   const paletteNames = Object.fromEntries(
@@ -69,7 +69,7 @@ export const header = ({ meta, basics, ui }, { lang, t, defaultPalette }) => {
             ${ui.nav.map(
               (id) => html`<li>
                 <a class="menu__link" href="#${id}">
-                  <span class="menu__number" aria-hidden="true">${ui.sections[id].number}</span>
+                  <span class="menu__number" aria-hidden="true">${numbers[id]}</span>
                   ${t(ui.navLabels[id])}
                 </a>
               </li>`,

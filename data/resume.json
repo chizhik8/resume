@@ -317,14 +317,13 @@
     },
 
     "sections": {
-      "about": { "number": "01", "title": { "en": "About me", "uk": "Про мене" } },
-      "skills": { "number": "02", "title": { "en": "Skills", "uk": "Навички" } },
-      "experience": { "number": "03", "title": { "en": "Experience", "uk": "Досвід" } },
-      "projects": { "number": "04", "title": { "en": "Projects", "uk": "Проєкти" } },
-      "education": { "number": "05", "title": { "en": "Education and languages", "uk": "Освіта і мови" } },
-      "languages": { "title": { "en": "Languages", "uk": "Мови" } },
-      "timeline": { "number": "06", "title": { "en": "Timeline", "uk": "Таймлайн" } },
-      "contact": { "number": "07", "title": { "en": "Let’s get acquainted", "uk": "Давайте познайомимося" } }
+      "about": { "title": { "en": "About me", "uk": "Про мене" } },
+      "skills": { "title": { "en": "Skills", "uk": "Навички" } },
+      "experience": { "title": { "en": "Experience", "uk": "Досвід" } },
+      "projects": { "title": { "en": "Projects", "uk": "Проєкти" } },
+      "education": { "title": { "en": "Education and languages", "uk": "Освіта і мови" } },
+      "timeline": { "title": { "en": "Timeline", "uk": "Таймлайн" } },
+      "contact": { "title": { "en": "Let’s get acquainted", "uk": "Давайте познайомимося" } }
     },
     "nav": ["about", "skills", "experience", "projects", "timeline", "contact"],
     "navLabels": {
@@ -361,6 +360,9 @@
       "codeSrSuffix": { "en": "on GitHub", "uk": "на GitHub" },
       "nda": { "en": "Closed source (NDA)", "uk": "Код закритий (NDA)" },
       "stackLabel": { "en": "Stack", "uk": "Стек" }
+    },
+    "education": {
+      "languages": { "en": "Languages", "uk": "Мови" }
     },
     "timeline": {
       "work": { "en": "Work", "uk": "Робота" },

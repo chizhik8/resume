@@ -1,4 +1,4 @@
-.section--panel > .container {
+.section--contact > .container {
   container-type: inline-size;
   padding: var(--space-4);
   border-radius: var(--radius-panel);
@@ -6,15 +6,15 @@
   color: var(--on-hi);
 }
 
-.section--panel .section__head {
+.section--contact .section__head {
   margin-block-end: var(--space-4);
 }
 
-.section--panel .section__eyebrow {
+.section--contact .section__eyebrow {
   color: inherit;
 }
 
-.section--panel .section__title {
+.section--contact .section__title {
   font-size: min(var(--fs-h2), 9.2cqi);
 }
 
@@ -37,11 +37,11 @@
 }
 
 @media (min-width: 47.25em) {
-  .section--panel {
+  .section--contact {
     --section-padding: 6rem;
   }
 
-  .section--panel > .container {
+  .section--contact > .container {
     padding: var(--space-7);
   }
 
@@ -51,7 +51,7 @@
 }
 
 @media (min-width: 75em) {
-  .section--panel > .container {
+  .section--contact > .container {
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto;
     grid-template-areas:
@@ -61,7 +61,7 @@
     padding: 3.5rem;
   }
 
-  .section--panel .section__head {
+  .section--contact .section__head {
     grid-area: head;
     align-self: end;
   }
