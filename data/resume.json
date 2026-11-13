@@ -110,7 +110,7 @@
     },
     {
       "name": { "en": "Architecture and infrastructure", "uk": "Архітектура і інфраструктура" },
-      "keywords": ["Webpack Module Federation", "AWS", "Docker", "CI/CD", "GitHub", "Strapi"]
+      "keywords": ["Module Federation", "AWS", "Docker", "CI/CD", "GitHub", "Strapi"]
     },
     {
       "name": { "en": "Quality and monitoring", "uk": "Якість і моніторинг" },
@@ -168,7 +168,7 @@
           "uk": "Тісно працювала з Product Owner, бекенд-розробниками і QA на всіх етапах: уточнення, розробка, тестування, реліз."
         }
       ],
-      "stack": ["React", "JavaScript", "TypeScript", "Tailwind CSS", "Material UI", "GraphQL", "REST", "TanStack Query", "Apollo Client", "Sentry", "Mixpanel", "AWS", "Docker", "CI/CD", "GitHub", "Playwright", "React Testing Library", "i18next", "Webpack Module Federation", "Figma", "Scrum"]
+      "stack": ["React", "JavaScript", "TypeScript", "Tailwind CSS", "Material UI", "GraphQL", "REST", "TanStack Query", "Apollo Client", "Sentry", "Mixpanel", "AWS", "Docker", "CI/CD", "GitHub", "Playwright", "React Testing Library", "i18next", "Module Federation", "Figma", "Scrum"]
     },
     {
       "id": "softserve",
@@ -215,7 +215,7 @@
         "en": "Augmented reality educational platform. Delivered features from requirements to production and refactored legacy code.",
         "uk": "Освітня платформа з доповненою реальністю. Вела фічі від вимог до продакшну і рефакторила легасі."
       },
-      "keywords": ["React", "TypeScript", "Tailwind CSS", "Material UI", "GraphQL", "Webpack Module Federation", "AWS"],
+      "keywords": ["React", "TypeScript", "Tailwind CSS", "Material UI", "GraphQL", "Module Federation", "AWS"],
       "url": "https://arbook.info/",
       "repository": null,
       "nda": true,
@@ -338,7 +338,6 @@
 
     "hero": {
       "openToWork": { "en": "Open to offers", "uk": "Відкрита до пропозицій" },
-      "writeMe": { "en": "Get in touch", "uk": "Написати мені" },
       "downloadPdf": { "en": "Download PDF", "uk": "Завантажити PDF" },
       "profilesLabel": { "en": "Profiles", "uk": "Профілі" },
       "metaLabels": {
@@ -372,7 +371,7 @@
         "en": "I’m looking for a Software Engineer role in Wrocław or remote. The fastest way to reach me is email or LinkedIn.",
         "uk": "Шукаю позицію Software Engineer у Вроцлаві або віддалено. Найшвидше відповідаю на email і в LinkedIn."
       },
-      "copy": { "en": "Copy", "uk": "Скопіювати" },
+      "copy": { "en": "Copy email", "uk": "Скопіювати email" },
       "copied": { "en": "Copied", "uk": "Скопійовано" },
       "copiedAnnounce": { "en": "Email copied", "uk": "Email скопійовано" },
       "copyFailed": { "en": "Couldn’t copy", "uk": "Не вдалося скопіювати" },

@@ -1,6 +1,6 @@
 import { html } from '../lib/html.js';
 import { pagePath } from '../lib/paths.js';
-import { arrow, burger, close, logo, moon, sun } from '../components/icons.js';
+import { burger, close, logo, moon, sun } from '../components/icons.js';
 
 export const header = ({ meta, basics, ui }, { lang, t, defaultPalette }) => {
   const name = t(basics.name);
@@ -87,8 +87,8 @@ export const header = ({ meta, basics, ui }, { lang, t, defaultPalette }) => {
             <span class="only-light">${sun}${t(theme.light)}<span class="visually-hidden">. ${t(theme.toDark)}</span></span>
           </button>
         </div>
-        <a class="menu__cta button button--primary" href="#contact">${t(ui.hero.writeMe)}${arrow}</a>
       </div>
       <p class="visually-hidden" aria-live="polite" data-palette-status></p>
+      <p class="visually-hidden" aria-live="polite" data-copy-status></p>
     </header>`;
 };

@@ -26,15 +26,4 @@ for (const lang of meta.langs) {
     assert.ok(inner.includes('<br>'), inner);
     assert.equal(inner.replace(/<[^>]+>/g, ''), data.basics.name[lang]);
   });
-
-  test(`hero links on the ${lang} page`, () => {
-    const links = [...heroMarkup(lang).matchAll(/<a class="([^"]*)" href="([^"]*)"([^>]*)>/g)].map(
-      ([, className, href, rest]) => [className, href, rest.includes(' download')],
-    );
-    assert.deepEqual(links, [
-      ['button button--primary', `mailto:${data.basics.email}`, false],
-      ['button button--outline', meta.basePath + meta.pdf[lang], true],
-      ...data.basics.profiles.map(({ url }) => ['button button--compact profiles__link', url, false]),
-    ]);
-  });
 }

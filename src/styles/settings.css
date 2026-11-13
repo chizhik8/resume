@@ -30,6 +30,7 @@
   --timeline-max: 62.5rem;
 
   --radius-card: 1.25rem;
+  --shadow-card: 0 1.5rem 3rem color-mix(in srgb, var(--on-hi) 35%, transparent);
   --radius-panel: 2rem;
   --radius-pill: 999px;
   --radius-tag: 0.5rem;

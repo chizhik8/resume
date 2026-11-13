@@ -43,7 +43,3 @@ export const graduationCap = raw(`<svg viewBox="0 0 24 24" width="20" height="20
   <path d="M2 9l10-5 10 5-10 5z"/>
   <path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5M22 9v6"/>
 </svg>`);
-
-export const arrow = raw(`<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-  <path d="M5 12h14M13 6l6 6-6 6"/>
-</svg>`);

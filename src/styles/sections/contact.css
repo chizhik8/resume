@@ -1,0 +1,78 @@
+.section--panel > .container {
+  container-type: inline-size;
+  padding: var(--space-4);
+  border-radius: var(--radius-panel);
+  background: var(--panel);
+  color: var(--on-hi);
+}
+
+.section--panel .section__head {
+  margin-block-end: var(--space-4);
+}
+
+.section--panel .section__eyebrow {
+  color: inherit;
+}
+
+.section--panel .section__title {
+  font-size: min(var(--fs-h2), 9.2cqi);
+}
+
+.contact__text {
+  max-inline-size: 32.5rem;
+  font-size: var(--fs-lead);
+}
+
+.contact__card {
+  inline-size: fit-content;
+  margin-block-start: var(--space-6);
+  padding: var(--space-5) var(--space-2);
+  border-radius: var(--radius-card);
+  background: var(--code-bg);
+  box-shadow: var(--shadow-card);
+}
+
+.contact__card :focus-visible {
+  outline-color: var(--code-text);
+}
+
+@media (min-width: 47.25em) {
+  .section--panel {
+    --section-padding: 6rem;
+  }
+
+  .section--panel > .container {
+    padding: var(--space-7);
+  }
+
+  .contact__card {
+    padding-inline: var(--space-4);
+  }
+}
+
+@media (min-width: 75em) {
+  .section--panel > .container {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas:
+      'head card'
+      'text card';
+    column-gap: var(--space-7);
+    padding: 3.5rem;
+  }
+
+  .section--panel .section__head {
+    grid-area: head;
+    align-self: end;
+  }
+
+  .contact__text {
+    grid-area: text;
+  }
+
+  .contact__card {
+    grid-area: card;
+    align-self: center;
+    margin-block-start: 0;
+  }
+}

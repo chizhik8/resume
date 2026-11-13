@@ -240,11 +240,6 @@ html {
   gap: var(--space-2);
 }
 
-.menu__cta {
-  min-height: var(--menu-row);
-  margin-block-start: var(--space-5);
-}
-
 @media (width < 47.25em) {
   :root[data-js] {
     scroll-padding-block-start: calc(var(--hit) + 2 * var(--space-2) + 1px);

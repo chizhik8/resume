@@ -53,16 +53,10 @@
 }
 
 .hero__meta {
+  margin-block-end: var(--space-2);
   color: var(--muted);
   font-size: 1rem;
   --dot-list-gap: 1.125rem;
-}
-
-.hero__actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-3);
-  margin-block-start: var(--space-2);
 }
 
 .hero__panel {

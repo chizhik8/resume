@@ -7,29 +7,35 @@
   padding: 0 calc(1.625rem - var(--stroke));
   border: var(--stroke) solid transparent;
   border-radius: var(--radius-pill);
+  background: var(--button-bg);
   font-weight: 700;
   text-decoration: none;
   cursor: pointer;
 }
 
+.button:hover {
+  background: color-mix(in srgb, var(--button-bg) 90%, black);
+}
+
 .button--primary {
-  background: var(--btn);
+  --button-bg: var(--btn);
   color: var(--on-btn);
 }
 
 .button--outline {
   border-color: var(--btn);
-  color: var(--text);
+  color: var(--btn);
 }
 
 .button--outline:hover {
-  background: var(--tint);
+  background: color-mix(in srgb, var(--btn) 85%, white);
+  color: var(--on-btn);
 }
 
 .button--control {
+  --button-bg: var(--surface);
   min-height: var(--hit);
   border-color: var(--border);
-  background: var(--surface);
   color: var(--text);
 }
 
@@ -39,9 +45,26 @@
   font-size: var(--fs-small);
 }
 
-.button--primary:hover,
-.profiles__link:hover {
-  filter: brightness(1.08);
+.contact-actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.contact-actions__address {
+  font-style: normal;
+}
+
+.contact-actions__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.copy-email:not([data-copy-state='copied']) .copy-email__copied,
+.copy-email:not([data-copy-state='failed']) .copy-email__failed,
+.copy-email[data-copy-state] .copy-email__idle {
+  display: none;
 }
 
 .chevron {
@@ -97,23 +120,22 @@
 }
 
 .profiles > :nth-child(1) {
-  --profile-bg: var(--pl1);
+  --button-bg: var(--pl1);
   --profile-text: var(--pl1-t);
 }
 
 .profiles > :nth-child(2) {
-  --profile-bg: var(--pl2);
+  --button-bg: var(--pl2);
   --profile-text: var(--pl2-t);
 }
 
 .profiles > :nth-child(3) {
-  --profile-bg: var(--pl3);
+  --button-bg: var(--pl3);
   --profile-text: var(--pl3-t);
 }
 
 .profiles__link {
   border-color: color-mix(in srgb, var(--profile-text) 18%, transparent);
-  background: var(--profile-bg);
   color: var(--profile-text);
 }
 
@@ -149,7 +171,7 @@
   border-radius: var(--radius-card);
   background: var(--code-bg);
   color: var(--code-text);
-  box-shadow: 0 1.5rem 3rem color-mix(in srgb, var(--on-hi) 35%, transparent);
+  box-shadow: var(--shadow-card);
   font-family: var(--font-mono);
   font-size: 0.90625rem;
   line-height: 1.75;

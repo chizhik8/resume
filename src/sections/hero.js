@@ -1,11 +1,11 @@
 import { html, raw, strong } from '../lib/html.js';
-import { rootFilePath } from '../lib/paths.js';
-import { arrow, download } from '../components/icons.js';
 import { codeCard } from '../components/code-card.js';
-import { profiles } from '../components/profiles.js';
+import { contactActions } from '../components/contact-actions.js';
 import { dot } from '../components/dot-list.js';
 
-export const hero = ({ meta, basics, ui }, { t }) => {
+export const hero = (data, i18n) => {
+  const { basics, ui } = data;
+  const { t } = i18n;
   const labels = ui.hero.metaLabels;
   const facts = [
     [labels.location, `${t(basics.location.city)}, ${t(basics.location.country)}`],
@@ -32,11 +32,7 @@ export const hero = ({ meta, basics, ui }, { t }) => {
             </div>`,
           )}
         </dl>
-        <div class="hero__actions">
-          <a class="button button--primary" href="mailto:${basics.email}">${t(ui.hero.writeMe)}${arrow}</a>
-          <a class="button button--outline" href="${rootFilePath(meta, t(meta.pdf))}" download>${download}${t(ui.hero.downloadPdf)}</a>
-        </div>
-        ${profiles(basics.profiles, { label: t(ui.hero.profilesLabel), newTab: t(ui.newTab) })}
+        ${contactActions(data, i18n)}
       </div>
       <div class="hero__panel" aria-hidden="true">
         ${codeCard({
