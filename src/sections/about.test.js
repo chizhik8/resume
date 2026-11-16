@@ -9,7 +9,10 @@ const data = JSON.parse(await readFile(new URL('../../data/resume.json', import.
 for (const lang of data.meta.langs) {
   test(`the ${lang} stat cards keep spaces between their parts`, () => {
     const cards = [...String(about(data, createT(lang))).matchAll(/<li[^>]*>([\s\S]*?)<\/li>/g)].map(([, inner]) =>
-      inner.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim(),
+      inner
+        .replace(/<[^>]+>/g, '')
+        .replace(/\s+/g, ' ')
+        .trim(),
     );
     assert.deepEqual(
       cards,

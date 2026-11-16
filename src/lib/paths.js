@@ -5,3 +5,7 @@ export const rootFilePath = (meta, file) => meta.basePath + file;
 export const pagePath = (meta, lang) => rootFilePath(meta, langDir(meta, lang));
 
 export const assetPath = (meta, file) => rootFilePath(meta, `assets/${file}`);
+
+export const pageUrl = (meta, lang) => meta.siteUrl + pagePath(meta, lang);
+
+export const assetUrl = (meta, file) => meta.siteUrl + assetPath(meta, file);

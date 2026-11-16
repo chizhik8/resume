@@ -10,6 +10,6 @@ export const contactActions = ({ meta, basics, ui }, { t }) => html`<div class="
   </address>
   <div class="contact-actions__buttons">
     ${copyEmail({ email: basics.email, labels: ui.contact, t })}
-    <a class="button button--outline" href="${rootFilePath(meta, t(meta.pdf))}" download>${download}${t(ui.hero.downloadPdf)}</a>
+    <a class="button button--outline" href="${rootFilePath(meta, t(meta.pdf))}" download data-goatcounter-click="pdf-download">${download}${t(ui.hero.downloadPdf)}</a>
   </div>
 </div>`;

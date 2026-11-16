@@ -97,3 +97,14 @@
   border-radius: inherit;
   background: var(--line);
 }
+
+@media (forced-colors: active) {
+  .languages__bar {
+    outline: 1px solid CanvasText;
+  }
+
+  .languages__bar::before {
+    forced-color-adjust: none;
+    background: CanvasText;
+  }
+}

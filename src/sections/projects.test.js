@@ -18,21 +18,23 @@ const webpWidth = (file) => {
 };
 
 const cards = (lang) =>
-  [...String(projects(data, createT(lang))).matchAll(/<article class="project">([\s\S]*?)<\/article>/g)].map(([, card]) => ({
-    images: [
-      [card.match(/ src="([^"]+)"/)[1], Number(card.match(/ width="(\d+)"/)[1])],
-      ...card
-        .match(/srcset="([^"]+)"/)[1]
-        .split(', ')
-        .map((item) => item.split(' '))
-        .map(([path, width]) => [path, parseInt(width, 10)]),
-    ],
-    link: card
-      .match(/<a [^>]*>([\s\S]*?)<\/a>/)[1]
-      .replace(/<[^>]+>/g, '')
-      .replace(/\s+/g, ' ')
-      .trim(),
-  }));
+  [...String(projects(data, createT(lang))).matchAll(/<article class="project">([\s\S]*?)<\/article>/g)].map(
+    ([, card]) => ({
+      images: [
+        [card.match(/ src="([^"]+)"/)[1], Number(card.match(/ width="(\d+)"/)[1])],
+        ...card
+          .match(/srcset="([^"]+)"/)[1]
+          .split(', ')
+          .map((item) => item.split(' '))
+          .map(([path, width]) => [path, parseInt(width, 10)]),
+      ],
+      link: card
+        .match(/<a [^>]*>([\s\S]*?)<\/a>/)[1]
+        .replace(/<[^>]+>/g, '')
+        .replace(/\s+/g, ' ')
+        .trim(),
+    }),
+  );
 
 test('every project image is a file in src/assets as wide as the markup says', async () => {
   for (const [path, width] of cards('en').flatMap(({ images }) => images)) {

@@ -9,6 +9,12 @@
   "scripts": {
     "build": "node scripts/build.js",
     "dev": "node scripts/dev.js",
-    "test": "node --test"
+    "test": "node --test",
+    "check": "html-validate \"dist/**/*.html\" && npm test",
+    "format": "prettier --write src scripts data .github package.json README.md"
+  },
+  "devDependencies": {
+    "html-validate": "11.21.1",
+    "prettier": "3.10.1"
   }
 }

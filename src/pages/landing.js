@@ -1,7 +1,8 @@
-import { html, raw } from '../lib/html.js';
+import { html, json } from '../lib/html.js';
 import { createT } from '../lib/i18n.js';
-import { assetPath } from '../lib/paths.js';
+import { assetUrl, pageUrl } from '../lib/paths.js';
 import { section } from '../components/section.js';
+import { pageHead } from '../components/page-head.js';
 import { header } from '../sections/header.js';
 import { hero } from '../sections/hero.js';
 import { about } from '../sections/about.js';
@@ -17,29 +18,59 @@ const SECTIONS = Object.entries({ about, skills, experience, projects, education
 
 const NUMBERS = Object.fromEntries(SECTIONS.map(([id], i) => [id, String(i + 1).padStart(2, '0')]));
 
-export const page = (data, lang, { headScript }) => {
-  const { meta, seo, ui } = data;
+const OG_IMAGE = { file: 'og.png', width: 1200, height: 630 };
+
+const person = ({ meta, basics }, lang, t) => ({
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: t(basics.name),
+  jobTitle: basics.label,
+  url: pageUrl(meta, lang),
+  sameAs: basics.profiles.map(({ url }) => url),
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: t(basics.location.city),
+    addressCountry: basics.location.countryCode,
+  },
+});
+
+const seoTags = (data, lang, t) => {
+  const { meta, seo } = data;
+  const url = pageUrl(meta, lang);
+
+  return html`<link rel="canonical" href="${url}">
+    ${meta.langs.map((code) => html`<link rel="alternate" hreflang="${code}" href="${pageUrl(meta, code)}">`)}
+    <link rel="alternate" hreflang="x-default" href="${pageUrl(meta, meta.defaultLang)}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="${t(seo.title)}">
+    <meta property="og:description" content="${t(seo.description)}">
+    <meta property="og:url" content="${url}">
+    <meta property="og:image" content="${assetUrl(meta, OG_IMAGE.file)}">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="${OG_IMAGE.width}">
+    <meta property="og:image:height" content="${OG_IMAGE.height}">
+    <meta property="og:image:alt" content="${t(seo.title)}">
+    <meta property="og:locale" content="${meta.locales[lang]}">
+    ${meta.langs.filter((code) => code !== lang).map((code) => html`<meta property="og:locale:alternate" content="${meta.locales[code]}">`)}
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">${json(person(data, lang, t))}</script>`;
+};
+
+export const page = (data, lang, { headScript, analytics }) => {
+  const { seo, ui } = data;
   const i18n = createT(lang);
   const { t } = i18n;
-  const asset = (file) => assetPath(meta, file);
-  const palettes = Object.keys(ui.palette.names);
-  const [defaultPalette] = palettes;
+  const [defaultPalette] = Object.keys(ui.palette.names);
 
   return html`<!doctype html>
 <html lang="${lang}" data-theme="dark" data-palette="${defaultPalette}">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="color-scheme" content="dark light">
-    <script>${raw(headScript.trim().replace('__PALETTES__', JSON.stringify(palettes)))}</script>
-    <title>${t(seo.title)}</title>
-    <meta name="description" content="${t(seo.description)}">
-    <link rel="preload" href="${asset('fonts/manrope.woff2')}" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="${asset('fonts/unbounded-700.woff2')}" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="${asset('site.css')}">
-    <link rel="icon" href="${asset('icons/favicon.svg')}" type="image/svg+xml">
-    <script type="module" src="${asset('scripts/main.js')}"></script>
-  </head>
+  ${pageHead(data, {
+    title: t(seo.title),
+    description: t(seo.description),
+    headScript,
+    extra: seoTags(data, lang, t),
+    analytics,
+  })}
   <body>
     ${header(data, { ...i18n, defaultPalette, numbers: NUMBERS })}
     <main id="main">

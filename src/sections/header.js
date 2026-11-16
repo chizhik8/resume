@@ -5,9 +5,7 @@ import { burger, close, logo, moon, sun } from '../components/icons.js';
 export const header = ({ meta, basics, ui }, { lang, t, defaultPalette, numbers }) => {
   const name = t(basics.name);
   const { langSwitch, palette, theme, menu } = ui;
-  const paletteNames = Object.fromEntries(
-    Object.entries(palette.names).map(([key, value]) => [key, t(value)]),
-  );
+  const paletteNames = Object.fromEntries(Object.entries(palette.names).map(([key, value]) => [key, t(value)]));
 
   const langLinks = (className) => html`
     <ul class="lang-switch ${className}" aria-label="${t(langSwitch.label)}">
@@ -29,9 +27,7 @@ export const header = ({ meta, basics, ui }, { lang, t, defaultPalette, numbers 
         </a>
         <nav class="header__nav header__wide" aria-label="${t(ui.navLabel)}">
           <ul class="header__menu">
-            ${ui.nav.map(
-              (id) => html`<li><a class="header__link" href="#${id}">${t(ui.navLabels[id])}</a></li>`,
-            )}
+            ${ui.nav.map((id) => html`<li><a class="header__link" href="#${id}">${t(ui.navLabels[id])}</a></li>`)}
           </ul>
         </nav>
         <div class="header__controls">

@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { escape, html, raw, strong } from './html.js';
+import { escape, html, json, raw, strong } from './html.js';
 
 test('escape replaces HTML special characters', () => {
   assert.equal(escape(`<a href="x">Tom & Jerry's</a>`), '&lt;a href=&quot;x&quot;&gt;Tom &amp; Jerry&#39;s&lt;/a&gt;');
@@ -30,6 +30,13 @@ test('html keeps the number 0', () => {
 
 test('raw inserts trusted markup as is', () => {
   assert.equal(String(html`<span>${raw('<svg></svg>')}</span>`), '<span><svg></svg></span>');
+});
+
+test('json cannot close the script it is inserted into', () => {
+  const value = { name: '</script><script>alert(1)</script>' };
+  const out = String(html`<script type="application/ld+json">${json(value)}</script>`);
+  assert.equal(out.match(/<\/script>/g).length, 1);
+  assert.deepEqual(JSON.parse(out.slice(out.indexOf('>') + 1, out.lastIndexOf('</script>'))), value);
 });
 
 test('strong turns **text** into <strong> and escapes everything else', () => {

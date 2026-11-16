@@ -30,13 +30,21 @@ const cases = [
   ['a stored dark theme wins over the system', { stored: { 'resume:theme': 'dark' }, system: 'light' }, {}],
   ['no stored theme gives the system theme', {}, {}],
   ['an empty theme gives the system theme', { stored: { 'resume:theme': '' }, system: 'light' }, { theme: 'light' }],
-  ['an unknown theme gives the system theme', { stored: { 'resume:theme': 'blue' }, system: 'light' }, { theme: 'light' }],
+  [
+    'an unknown theme gives the system theme',
+    { stored: { 'resume:theme': 'blue' }, system: 'light' },
+    { theme: 'light' },
+  ],
   ['a known palette is applied', { stored: { 'resume:palette': other } }, { palette: other }],
   ['an empty palette keeps the initial one', { stored: { 'resume:palette': '' } }, {}],
   ['an unknown palette keeps the initial one', { stored: { 'resume:palette': 'old' } }, {}],
   ['a stored open menu is marked', { stored: { 'resume:menu': 'open' } }, { menuOpen: '' }],
   ['a stored closed menu is not marked', { stored: { 'resume:menu': 'closed' } }, {}],
-  ['blocked storage gives the system theme and the initial palette', { blocked: true, system: 'light' }, { theme: 'light' }],
+  [
+    'blocked storage gives the system theme and the initial palette',
+    { blocked: true, system: 'light' },
+    { theme: 'light' },
+  ],
 ];
 
 for (const [name, input, changes] of cases) {

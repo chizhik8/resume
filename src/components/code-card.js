@@ -22,7 +22,8 @@ export const codeCard = (fields) => {
     </p>
     <div class="code-card__line">${token('punct', '{')}</div>
     ${entries.map(
-      ([key, item], i) => html`<div class="code-card__line code-card__line--nested">${token('key', JSON.stringify(key))}${token('punct', ': ')}${value(item)}${i < entries.length - 1 && token('punct', ',')}</div>`,
+      ([key, item], i) =>
+        html`<div class="code-card__line code-card__line--nested">${token('key', JSON.stringify(key))}${token('punct', ': ')}${value(item)}${i < entries.length - 1 && token('punct', ',')}</div>`,
     )}
     <div class="code-card__line">${token('punct', '}')}<span class="code-card__cursor"></span></div>
   </div>`;

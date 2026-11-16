@@ -287,3 +287,20 @@ html {
     padding-inline: 0;
   }
 }
+
+@media (forced-colors: active) {
+  .lang-switch__link[aria-current='page'] {
+    forced-color-adjust: none;
+    background: SelectedItem;
+    color: SelectedItemText;
+  }
+
+  .drum::before {
+    forced-color-adjust: none;
+    background: CanvasText;
+  }
+
+  .drum__disc {
+    forced-color-adjust: none;
+  }
+}

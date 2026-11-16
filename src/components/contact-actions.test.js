@@ -15,7 +15,21 @@ for (const lang of meta.langs) {
   });
 
   test(`the ${lang} contact actions link the profiles, then the ${lang} PDF`, () => {
-    const links = [...render(lang).matchAll(/<a\b[^>]*href="([^"]+)"([^>]*)>/g)].map(([, href, rest]) => [href, rest.includes(' download')]);
-    assert.deepEqual(links, [...basics.profiles.map(({ url }) => [url, false]), [meta.basePath + meta.pdf[lang], true]]);
+    const links = [...render(lang).matchAll(/<a\b[^>]*href="([^"]+)"([^>]*)>/g)].map(([, href, rest]) => [
+      href,
+      rest.includes(' download'),
+    ]);
+    assert.deepEqual(links, [
+      ...basics.profiles.map(({ url }) => [url, false]),
+      [meta.basePath + meta.pdf[lang], true],
+    ]);
+  });
+
+  test(`only the ${lang} PDF link sends the pdf-download event`, () => {
+    const events = [...render(lang).matchAll(/<a\b[^>]*href="([^"]+)"[^>]*data-goatcounter-click="([^"]+)"/g)];
+    assert.deepEqual(
+      events.map(([, href, name]) => [href, name]),
+      [[meta.basePath + meta.pdf[lang], 'pdf-download']],
+    );
   });
 }

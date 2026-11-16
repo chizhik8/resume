@@ -2,7 +2,7 @@ import { isDate } from './dates.js';
 
 const LINK_KEYS = new Set(['url', 'repository', 'repo', 'siteUrl']);
 const ALLOWED_LINK = /^(https:|mailto:)/;
-const DATE_KEYS = new Set(['updated', 'startDate', 'endDate']);
+const DATE_KEYS = new Set(['startDate', 'endDate']);
 const MARKER = '[…';
 const MARKER_DEFINITION = 'ui.missing';
 
@@ -13,8 +13,7 @@ export const validate = (data) => {
   const errors = [];
   const missing = [];
 
-  const isLocalized = (value) =>
-    isPlainObject(value) && Object.keys(value).some((key) => langs.includes(key));
+  const isLocalized = (value) => isPlainObject(value) && Object.keys(value).some((key) => langs.includes(key));
 
   const isEmptyText = (text) => text == null || (typeof text === 'string' && text.trim() === '');
 
@@ -52,7 +51,7 @@ export const validate = (data) => {
       if (LINK_KEYS.has(key) && typeof child === 'string' && !ALLOWED_LINK.test(child)) {
         errors.push(`${childPath}: only https: and mailto: links are allowed, got "${child}"`);
       }
-      if (DATE_KEYS.has(key) && child !== null && !isLocalized(child) && !isDate(child)) {
+      if (DATE_KEYS.has(key) && child !== null && !isDate(child)) {
         errors.push(`${childPath}: dates must be YYYY-MM or YYYY-MM-DD, got ${JSON.stringify(child)}`);
       }
       walk(child, childPath);
@@ -61,9 +60,7 @@ export const validate = (data) => {
 
   walk(data, '');
 
-  for (const key of ['updated', 'repo']) {
-    if (data.meta[key] == null) errors.push(`meta.${key}: required`);
-  }
+  if (data.meta.repo == null) errors.push('meta.repo: required');
 
   (data.projects ?? []).forEach((project, i) => {
     if (!isLocalized(project.imageAlt)) errors.push(`projects[${i}].imageAlt: required for every project`);

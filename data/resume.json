@@ -1,11 +1,11 @@
 {
   "meta": {
-    "updated": "2026-10-19",
     "siteUrl": "https://chizhik8.github.io",
     "basePath": "/resume/",
     "repo": "https://github.com/chizhik8/resume",
     "langs": ["en", "uk"],
     "defaultLang": "en",
+    "locales": { "en": "en_GB", "uk": "uk_UA" },
     "pdf": {
       "en": "Yuliia_Chyzhkova_CV_EN.pdf",
       "uk": "Yuliia_Chyzhkova_CV_UA.pdf"
@@ -29,7 +29,7 @@
     "initials": { "en": "YC", "uk": "ЮЧ" },
     "label": "Software Engineer",
     "headline": {
-      "en": " I bring passion and responsibility to every project, delivering well-considered, reliable solutions on time.",
+      "en": "I bring passion and responsibility to every project, delivering well-considered, reliable solutions on time.",
       "uk": "Я підходжу до кожного проєкту з ентузіазмом і відповідальністю, вчасно надаючи продумані та надійні рішення."
     },
     "email": "for.yu.ch@gmail.com",
@@ -80,7 +80,7 @@
     ],
     "paragraphs": [
       {
-        "en": "Frontend Software Engineer with commerce experience in building and maintaining web platforms. I implement functionality—from requirement clarification to release. Troubleshoot issues in live environments and refactor legacy code to improve performance and maintainability.",
+        "en": "Frontend Software Engineer with commercial experience in building and maintaining web platforms. I implement functionality—from requirement clarification to release. I troubleshoot issues in live environments and refactor legacy code to improve performance and maintainability.",
         "uk": "Frontend Software Engineer з комерційним досвідом розробки та підтримки веб-платформ. Реалізую функціонал від уточнення вимог до релізу. Виправляю помилки в робочому середовищі та рефакторю застарілий код, щоб покращити продуктивність і зручність його підтримки."
       },
       {
@@ -97,12 +97,7 @@
     },
     {
       "name": { "en": "Layout and UI", "uk": "Верстка і UI" },
-      "keywords": [
-        "HTML5",
-        "CSS3",
-        "Tailwind CSS",
-        "Material UI"
-      ]
+      "keywords": ["HTML5", "CSS3", "Tailwind CSS", "Material UI"]
     },
     {
       "name": { "en": "Data and APIs", "uk": "Дані і API" },
@@ -168,7 +163,29 @@
           "uk": "Тісно працювала з Product Owner, бекенд-розробниками і QA на всіх етапах: уточнення, розробка, тестування, реліз."
         }
       ],
-      "stack": ["React", "JavaScript", "TypeScript", "Tailwind CSS", "Material UI", "GraphQL", "REST", "TanStack Query", "Apollo Client", "Sentry", "Mixpanel", "AWS", "Docker", "CI/CD", "GitHub", "Playwright", "React Testing Library", "i18next", "Module Federation", "Figma", "Scrum"]
+      "stack": [
+        "React",
+        "JavaScript",
+        "TypeScript",
+        "Tailwind CSS",
+        "Material UI",
+        "GraphQL",
+        "REST",
+        "TanStack Query",
+        "Apollo Client",
+        "Sentry",
+        "Mixpanel",
+        "AWS",
+        "Docker",
+        "CI/CD",
+        "GitHub",
+        "Playwright",
+        "React Testing Library",
+        "i18next",
+        "Module Federation",
+        "Figma",
+        "Scrum"
+      ]
     },
     {
       "id": "softserve",
@@ -380,8 +397,7 @@
       "printVersion": { "en": "Printable A4 version", "uk": "Версія A4 для друку" }
     },
     "footer": {
-      "code": { "en": "Site source on GitHub", "uk": "Код сайту на GitHub" },
-      "updated": { "en": "Updated {date}", "uk": "Оновлено {date}" }
+      "code": { "en": "Site source on GitHub", "uk": "Код сайту на GitHub" }
     },
     "newTab": { "en": "(opens in a new tab)", "uk": "(відкривається в новій вкладці)" },
     "missing": { "en": "[…]", "uk": "[…]" },

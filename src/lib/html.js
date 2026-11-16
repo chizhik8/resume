@@ -24,4 +24,6 @@ export const html = (strings, ...values) =>
 
 export const raw = (value) => new SafeHtml(String(value));
 
+export const json = (value) => raw(JSON.stringify(value).replace(/</g, '\\u003c'));
+
 export const strong = (text) => raw(escape(text).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>'));

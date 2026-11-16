@@ -2,7 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { validate } from './validate.js';
 
-const meta = { langs: ['en', 'uk'], updated: '2026-10-19', repo: 'https://github.com/x/y' };
+const meta = { langs: ['en', 'uk'], repo: 'https://github.com/x/y' };
 
 test('valid data has no errors and no missing fields', () => {
   const result = validate({ meta, basics: { name: { en: 'Yuliia', uk: 'Юлія' } }, projects: [] });
@@ -49,11 +49,7 @@ test('null fields and […] markers are listed as missing', () => {
     work: [{ highlights: [{ en: 'Shipped [… features]', uk: 'Фічі [… за рік]' }] }],
   });
   assert.deepEqual(errors, []);
-  assert.deepEqual(missing, [
-    'basics.profiles[0].url',
-    'work[0].highlights[0].en',
-    'work[0].highlights[0].uk',
-  ]);
+  assert.deepEqual(missing, ['basics.profiles[0].url', 'work[0].highlights[0].en', 'work[0].highlights[0].uk']);
 });
 
 test('the ui.missing marker itself is not listed', () => {
@@ -79,27 +75,25 @@ test('only https: and mailto: links are allowed', () => {
   ]);
 });
 
-test('updated, startDate and endDate are checked as dates', () => {
+test('startDate and endDate are checked as dates', () => {
   const { errors, missing } = validate({
-    meta: { ...meta, updated: '2026/10' },
+    meta,
     work: [
       { startDate: '2026/10', endDate: '2026/10' },
       { startDate: '2023-10', endDate: null },
     ],
   });
   assert.deepEqual(errors, [
-    'meta.updated: dates must be YYYY-MM or YYYY-MM-DD, got "2026/10"',
     'work[0].startDate: dates must be YYYY-MM or YYYY-MM-DD, got "2026/10"',
     'work[0].endDate: dates must be YYYY-MM or YYYY-MM-DD, got "2026/10"',
   ]);
   assert.deepEqual(missing, ['work[1].endDate']);
 });
 
-test('a date that is not a string is an error, a localized label is not', () => {
+test('a date that is not a string is an error', () => {
   const { errors } = validate({
     meta,
     work: [{ startDate: 202310, endDate: { year: 2026 } }],
-    ui: { footer: { updated: { en: 'Updated {date}', uk: 'Оновлено {date}' } } },
   });
   assert.deepEqual(errors, [
     'work[0].startDate: dates must be YYYY-MM or YYYY-MM-DD, got 202310',
@@ -107,9 +101,9 @@ test('a date that is not a string is an error, a localized label is not', () => 
   ]);
 });
 
-test('meta.updated and meta.repo are required', () => {
-  const { errors } = validate({ meta: { ...meta, updated: null, repo: undefined } });
-  assert.deepEqual(errors, ['meta.updated: required', 'meta.repo: required']);
+test('meta.repo is required', () => {
+  const { errors } = validate({ meta: { ...meta, repo: undefined } });
+  assert.deepEqual(errors, ['meta.repo: required']);
 });
 
 test('every project needs imageAlt in both languages', () => {
@@ -126,8 +120,5 @@ test('every project needs imageAlt in both languages', () => {
 
 test('an empty imageAlt is an error', () => {
   const { errors } = validate({ meta, projects: [{ imageAlt: { en: '', uk: '' } }] });
-  assert.deepEqual(errors, [
-    'projects[0].imageAlt: no "en" text',
-    'projects[0].imageAlt: no "uk" text',
-  ]);
+  assert.deepEqual(errors, ['projects[0].imageAlt: no "en" text', 'projects[0].imageAlt: no "uk" text']);
 });

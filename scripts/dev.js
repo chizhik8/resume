@@ -16,6 +16,7 @@ const types = {
   '.css': 'text/css; charset=utf-8',
   '.js': 'text/javascript; charset=utf-8',
   '.json': 'application/json; charset=utf-8',
+  '.webmanifest': 'application/manifest+json; charset=utf-8',
   '.svg': 'image/svg+xml',
   '.png': 'image/png',
   '.webp': 'image/webp',
@@ -101,7 +102,12 @@ const server = createServer(async (request, response) => {
     response.writeHead(200, { 'Content-Type': types[extname(file)] ?? 'application/octet-stream' });
     response.end(body);
   } catch {
-    response.writeHead(404, { 'Content-Type': types['.txt'] }).end('Not found');
+    try {
+      const body = await readFile(join(dist, '404.html'));
+      response.writeHead(404, { 'Content-Type': types['.html'] }).end(body);
+    } catch {
+      response.writeHead(404, { 'Content-Type': types['.txt'] }).end('Not found');
+    }
   }
 });
 
@@ -109,7 +115,9 @@ const initialBuildOk = await runBuild();
 server.listen(port, () => {
   console.log(`http://localhost:${port}${base}`);
   if (!initialBuildOk) {
-    console.error('Initial build failed: the page may be missing or outdated. Fix the error above and save, the site rebuilds automatically.');
+    console.error(
+      'Initial build failed: the page may be missing or outdated. Fix the error above and save, the site rebuilds automatically.',
+    );
   }
 });
 

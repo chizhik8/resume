@@ -5,7 +5,16 @@ import { dot } from '../components/dot-list.js';
 import { period } from '../components/period.js';
 import { tagList } from '../components/tag-list.js';
 
-export const experience = ({ work, ui: { experience: labels, projects: { stackLabel } } }, { lang, t }) => {
+export const experience = (
+  {
+    work,
+    ui: {
+      experience: labels,
+      projects: { stackLabel },
+    },
+  },
+  { lang, t },
+) => {
   const formatDuration = (start, end) => {
     const { years, months } = duration(start, end);
     return [years && t(labels.duration.years, { n: years }), months && t(labels.duration.months, { n: months })]
@@ -15,7 +24,17 @@ export const experience = ({ work, ui: { experience: labels, projects: { stackLa
 
   return html`<ol class="experience">
   ${work.map(
-    ({ id, position, name, remote, startDate, endDate, summary, highlights, stack }) => html`<li class="experience__item">
+    ({
+      id,
+      position,
+      name,
+      remote,
+      startDate,
+      endDate,
+      summary,
+      highlights,
+      stack,
+    }) => html`<li class="experience__item">
       <article class="job">
         <div class="job__head">
           <div class="job__heading">

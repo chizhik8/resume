@@ -1,7 +1,10 @@
 import { html } from '../lib/html.js';
 import { period } from '../components/period.js';
 
-export const education = ({ education: items, languages, ui: { education: labels } }, { lang, t }) => html`<div class="education">
+export const education = (
+  { education: items, languages, ui: { education: labels } },
+  { lang, t },
+) => html`<div class="education">
   <ul class="education__list">
     ${items.map(
       ({ institution, area, startDate, endDate }) => html`<li class="education__item">
