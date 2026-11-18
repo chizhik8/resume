@@ -17,6 +17,13 @@ const entries = (lang) =>
 test('the en timeline goes from newest to oldest and names each kind', () => {
   assert.deepEqual(entries('en'), [
     [
+      'Education: ',
+      [
+        ['2026-10', 'Oct 2026'],
+        ['2026-11', 'Nov 2026'],
+      ],
+    ],
+    [
       'Work: ',
       [
         ['2023-10', 'Oct 2023'],
@@ -49,6 +56,13 @@ test('the en timeline goes from newest to oldest and names each kind', () => {
 
 test('the uk timeline goes from newest to oldest and names each kind', () => {
   assert.deepEqual(entries('uk'), [
+    [
+      'Навчання: ',
+      [
+        ['2026-10', '10.2026'],
+        ['2026-11', '11.2026'],
+      ],
+    ],
     [
       'Робота: ',
       [

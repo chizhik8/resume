@@ -22,6 +22,10 @@ const languages = (lang) =>
 test('the en education periods show month names', () => {
   assert.deepEqual(periods('en'), [
     [
+      ['2026-10', 'Oct 2026'],
+      ['2026-11', 'Nov 2026'],
+    ],
+    [
       ['2021-12', 'Dec 2021'],
       ['2022-02', 'Feb 2022'],
     ],
@@ -34,6 +38,10 @@ test('the en education periods show month names', () => {
 
 test('the uk education periods show numeric months', () => {
   assert.deepEqual(periods('uk'), [
+    [
+      ['2026-10', '10.2026'],
+      ['2026-11', '11.2026'],
+    ],
     [
       ['2021-12', '12.2021'],
       ['2022-02', '02.2022'],

@@ -9,7 +9,7 @@ export const education = (
     ${items.map(
       ({ institution, area, startDate, endDate }) => html`<li class="education__item">
         <div class="education__heading">
-          <h3 class="education__title">${area}</h3>
+          <h3 class="education__title">${t(area)}</h3>
           <p class="education__school">${institution}</p>
         </div>
         <p class="education__dates">${period(startDate, endDate, lang)}</p>

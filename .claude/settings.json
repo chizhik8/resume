@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(npm run build | Out-Null; npm run check 2>&1 | Select-String -Pattern \"^ℹ \\(tests|pass|fail\\)|✖\"; Select-String -Path dist/index.html -Pattern \"AI-Powered\" | ForEach-Object { $_.Line.Trim\\(\\).Substring\\(0, [Math]::Min\\(200, $_.Line.Trim\\(\\).Length\\)\\) })"
+    ]
+  }
+}

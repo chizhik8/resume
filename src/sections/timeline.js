@@ -9,7 +9,7 @@ const entry = (kind, title, place, { startDate, endDate }) => ({ kind, title, pl
 export const timeline = ({ work, education, ui: { timeline: labels } }, { lang, t }) => {
   const entries = [
     ...work.map((job) => entry('work', job.position, job.name, job)),
-    ...education.map((item) => entry('education', item.area, item.institution, item)),
+    ...education.map((item) => entry('education', t(item.area), item.institution, item)),
   ].sort((a, b) => b.startDate.localeCompare(a.startDate));
 
   return html`<ol class="timeline">

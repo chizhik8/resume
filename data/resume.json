@@ -3,67 +3,123 @@
     "siteUrl": "https://chizhik8.github.io",
     "basePath": "/resume/",
     "repo": "https://github.com/chizhik8/resume",
-    "langs": ["en", "uk"],
+    "langs": [
+      "en",
+      "uk"
+    ],
     "defaultLang": "en",
-    "locales": { "en": "en_GB", "uk": "uk_UA" },
+    "locales": {
+      "en": "en_GB",
+      "uk": "uk_UA"
+    },
     "pdf": {
       "en": "Yuliia_Chyzhkova_CV_EN.pdf",
       "uk": "Yuliia_Chyzhkova_CV_UA.pdf"
     },
-    "analytics": { "goatcounter": null }
-  },
-
-  "seo": {
-    "title": {
-      "en": "Yuliia Chyzhkova — Software Engineer",
-      "uk": "Юлія Чижкова — Software Engineer"
-    },
-    "description": {
-      "en": "Software Engineer: React, Next.js, Node.js. 4+ years building and maintaining production web platforms",
-      "uk": "Software Engineer: React, Next.js, Node.js. 4+ роки розробки та підтримки веб-платформ у продакшні"
+    "analytics": {
+      "goatcounter": null
     }
   },
-
+  "seo": {
+    "title": {
+      "en": "Yuliia Chyzhkova — Software Engineer · AI-Powered Development",
+      "uk": "Юлія Чижкова — Software Engineer · AI-Powered Development"
+    },
+    "description": {
+      "en": "Software Engineer · AI-Powered Development: React, Next.js, Node.js. 5 years building and maintaining production web platforms",
+      "uk": "Software Engineer · AI-Powered Development: React, Next.js, Node.js. 5 років розробки та підтримки веб-платформ у продакшні"
+    }
+  },
   "basics": {
-    "name": { "en": "Yuliia Chyzhkova", "uk": "Юлія Чижкова" },
-    "initials": { "en": "YC", "uk": "ЮЧ" },
-    "label": "Software Engineer",
+    "name": {
+      "en": "Yuliia Chyzhkova",
+      "uk": "Юлія Чижкова"
+    },
+    "initials": {
+      "en": "YC",
+      "uk": "ЮЧ"
+    },
+    "label": "Software Engineer · AI-Powered Development",
     "headline": {
       "en": "I bring passion and responsibility to every project, delivering well-considered, reliable solutions on time.",
       "uk": "Я підходжу до кожного проєкту з ентузіазмом і відповідальністю, вчасно надаючи продумані та надійні рішення."
     },
     "email": "for.yu.ch@gmail.com",
     "phones": [
-      { "number": "+380508323344", "pdfOnly": true },
-      { "number": null, "pdfOnly": true }
+      {
+        "number": "+380508323344",
+        "pdfOnly": true
+      },
+      {
+        "number": null,
+        "pdfOnly": true
+      }
     ],
     "location": {
-      "city": { "en": "Wrocław", "uk": "Вроцлав" },
-      "country": { "en": "Poland", "uk": "Польща" },
+      "city": {
+        "en": "Wrocław",
+        "uk": "Вроцлав"
+      },
+      "country": {
+        "en": "Poland",
+        "uk": "Польща"
+      },
       "countryCode": "PL"
     },
-    "workFormat": { "en": "Remote or hybrid", "uk": "Віддалено або гібрид" },
-    "experience": { "en": "4+ years of experience", "uk": "4+ роки досвіду" },
+    "workFormat": {
+      "en": "Remote or hybrid",
+      "uk": "Віддалено або гібрид"
+    },
+    "experience": {
+      "en": "5 years of experience",
+      "uk": "5 років досвіду"
+    },
     "openToWork": true,
     "summary": {
       "en": "Software Engineer with hands-on experience building and maintaining web platforms, delivering end-to-end features, resolving production issues, and improving legacy code for better performance and maintainability. Strong background in API integration, testing, and cross-functional collaboration with Product, Backend, and QA teams. Focused on delivering stable, user-friendly features and supporting releases in AWS-based CI/CD environments.",
       "uk": "Software Engineer з практичним досвідом розробки та підтримки веб-платформ, ведення функціоналу від початку до релізу, виправлення проблем у продакшні та покращення легасі-коду для швидкодії та зручності підтримки. Маю досвід інтеграції API, тестування та тісної співпраці з командами Product, Backend і QA. Орієнтуюся на стабільний і зручний функціонал та підтримку релізів у AWS CI/CD."
     },
-    "stack": ["JavaScript", "TypeScript", "React", "Next.js", "Node.js", "REST / GraphQL"],
-    "focus": ["UI/UX", "Performance", "Code Quality"],
-    "aiTools": ["Claude Code", "Codex"],
+    "stack": [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Node.js",
+      "REST / GraphQL",
+      "AWS"
+    ],
+    "focus": [
+      "UI/UX",
+      "Performance",
+      "Code Quality"
+    ],
+    "aiTools": [
+      "Claude Code",
+      "Codex"
+    ],
     "profiles": [
-      { "network": "LinkedIn", "url": "https://www.linkedin.com/in/yuliia-chyzhkova-580514337" },
-      { "network": "GitHub", "url": "https://github.com/chizhik8" },
-      { "network": "Telegram", "url": "https://t.me/chizhik_yu" }
+      {
+        "network": "LinkedIn",
+        "url": "https://www.linkedin.com/in/yuliia-chyzhkova-580514337"
+      },
+      {
+        "network": "GitHub",
+        "url": "https://github.com/chizhik8"
+      },
+      {
+        "network": "Telegram",
+        "url": "https://t.me/chizhik_yu"
+      }
     ]
   },
-
   "about": {
     "stats": [
       {
-        "value": "4+",
-        "unit": { "en": "years", "uk": "роки" },
+        "value": "5",
+        "unit": {
+          "en": "years",
+          "uk": "років"
+        },
         "label": {
           "en": "of commercial experience",
           "uk": "комерційного досвіду"
@@ -71,7 +127,10 @@
       },
       {
         "value": "2",
-        "unit": { "en": "products", "uk": "продукти" },
+        "unit": {
+          "en": "products",
+          "uk": "продукти"
+        },
         "label": {
           "en": "in production: AR Book and the museum web platform",
           "uk": "у продакшні: AR Book і веб-платформа музею"
@@ -80,43 +139,94 @@
     ],
     "paragraphs": [
       {
-        "en": "Frontend Software Engineer with commercial experience in building and maintaining web platforms. I implement functionality—from requirement clarification to release. I troubleshoot issues in live environments and refactor legacy code to improve performance and maintainability.",
-        "uk": "Frontend Software Engineer з комерційним досвідом розробки та підтримки веб-платформ. Реалізую функціонал від уточнення вимог до релізу. Виправляю помилки в робочому середовищі та рефакторю застарілий код, щоб покращити продуктивність і зручність його підтримки."
+        "en": "I’m a software engineer who takes end-to-end ownership of features, from backlog refinement through release and production support. Working directly with stakeholders, I clarify requirements, break down the work, and design technical solutions. I build features across both monolithic and micro-frontend architectures, integrate REST and GraphQL APIs, and write unit and integration tests. I also work closely with QA, manage releases through AWS-based CI/CD pipelines, investigate and resolve production issues.",
+        "uk": "Software Engineer з досвідом повного циклу ведення фіч — від етапу грумінгу (backlog refinement) до релізу та підтримки на продакшені. Працюючи напряму із замовниками та бізнесом (stakeholders), я уточнюю вимоги, декомпозую задачі та проєктую технічні рішення. Розробляю функціонал як у монолітних, так і в мікрофронтенд-архітектурах, інтегрую REST і GraphQL API, а також пишу юніт- та інтеграційні тести. Крім того, я тісно співпрацюю з QA, керую релізами через CI/CD-пайплайни на базі AWS, а також досліджую та вирішую інциденти на продакшені."
       },
       {
-        "en": "My strengths are REST and GraphQL API integration, testing and close collaboration with Product, Backend and QA. I care about stable, user-friendly features and calm releases in AWS CI/CD.",
-        "uk": "Сильні сторони: інтеграція з REST і GraphQL API, тестування та тісна робота з Product, Backend і QA. Мені важливо, щоб функціонал був стабільним і зручним, а релізи в AWS CI/CD проходили спокійно."
+        "en": "My current focus is full-stack and AI-powered development. I cover the entire development lifecycle—from requirements and application design to frontend and backend implementation and cloud deployment—integrating AI across the workflow to build features faster, draft technical specifications, and write tests.",
+        "uk": "Зараз мій основний фокус — full-stack та AI-powered розробка. Я веду весь цикл створення продукту — від збору вимог і проєктування додатку до фронтенд- і бекенд-реалізації та деплою в хмару, інтегруючи AI в робочий процес для швидшої розробки фіч, підготовки технічних специфікацій та написання тестів."
       }
     ]
   },
-
   "skills": [
     {
-      "name": { "en": "Core", "uk": "Основне" },
-      "keywords": ["React", "Next.js", "TypeScript", "JavaScript", "Node.js"]
+      "name": {
+        "en": "Core",
+        "uk": "Основне"
+      },
+      "keywords": [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "JavaScript",
+        "Node.js"
+      ]
     },
     {
-      "name": { "en": "Layout and UI", "uk": "Верстка і UI" },
-      "keywords": ["HTML5", "CSS3", "Tailwind CSS", "Material UI"]
+      "name": {
+        "en": "Layout and UI",
+        "uk": "Верстка і UI"
+      },
+      "keywords": [
+        "HTML5",
+        "CSS3",
+        "Tailwind CSS",
+        "Material UI"
+      ]
     },
     {
-      "name": { "en": "Data and APIs", "uk": "Дані і API" },
-      "keywords": ["REST", "GraphQL", "TanStack Query", "Apollo Client", "i18next"]
+      "name": {
+        "en": "Data and APIs",
+        "uk": "Дані і API"
+      },
+      "keywords": [
+        "REST",
+        "GraphQL",
+        "TanStack Query",
+        "Apollo Client",
+        "i18next"
+      ]
     },
     {
-      "name": { "en": "Architecture and infrastructure", "uk": "Архітектура і інфраструктура" },
-      "keywords": ["Module Federation", "AWS", "Docker", "CI/CD", "GitHub", "Strapi"]
+      "name": {
+        "en": "Architecture and infrastructure",
+        "uk": "Архітектура і інфраструктура"
+      },
+      "keywords": [
+        "Module Federation",
+        "AWS",
+        "Docker",
+        "CI/CD",
+        "GitHub",
+        "Strapi"
+      ]
     },
     {
-      "name": { "en": "Quality and monitoring", "uk": "Якість і моніторинг" },
-      "keywords": ["Playwright", "React Testing Library", "Sentry", "Mixpanel"]
+      "name": {
+        "en": "Quality and monitoring",
+        "uk": "Якість і моніторинг"
+      },
+      "keywords": [
+        "Playwright",
+        "React Testing Library",
+        "Sentry",
+        "Mixpanel"
+      ]
     },
     {
-      "name": { "en": "Process and tools", "uk": "Процес і інструменти" },
-      "keywords": ["Agile", "Scrum", "Figma", "Claude Code", "Codex"]
+      "name": {
+        "en": "Process and tools",
+        "uk": "Процес і інструменти"
+      },
+      "keywords": [
+        "Agile",
+        "Scrum",
+        "Figma",
+        "Claude Code",
+        "Codex"
+      ]
     }
   ],
-
   "work": [
     {
       "id": "flexreality",
@@ -220,10 +330,19 @@
           "uk": "Працювала з розробниками та іншими учасниками команди від реалізації до тестування і здачі."
         }
       ],
-      "stack": ["Next.js", "TypeScript", "JavaScript", "CSS3", "REST", "Strapi", "GitHub", "Figma", "Agile"]
+      "stack": [
+        "Next.js",
+        "TypeScript",
+        "JavaScript",
+        "CSS3",
+        "REST",
+        "Strapi",
+        "GitHub",
+        "Figma",
+        "Agile"
+      ]
     }
   ],
-
   "projects": [
     {
       "id": "ar-book",
@@ -232,12 +351,23 @@
         "en": "Augmented reality educational platform. Delivered features from requirements to production and refactored legacy code.",
         "uk": "Освітня платформа з доповненою реальністю. Вела фічі від вимог до продакшну і рефакторила легасі."
       },
-      "keywords": ["React", "TypeScript", "Tailwind CSS", "Material UI", "GraphQL", "Module Federation", "AWS"],
+      "keywords": [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Material UI",
+        "GraphQL",
+        "Module Federation",
+        "AWS"
+      ],
       "url": "https://arbook.info/",
       "repository": null,
       "nda": true,
       "image": "ar-book",
-      "imageAlt": { "en": "AR Book screenshot", "uk": "Скріншот AR Book" }
+      "imageAlt": {
+        "en": "AR Book screenshot",
+        "uk": "Скріншот AR Book"
+      }
     },
     {
       "id": "museum",
@@ -249,16 +379,33 @@
         "en": "Public museum website with dynamic content from Strapi CMS.",
         "uk": "Публічний сайт музею з динамічним контентом зі Strapi CMS."
       },
-      "keywords": ["Next.js", "TypeScript", "CSS3", "Strapi", "REST"],
+      "keywords": [
+        "Next.js",
+        "TypeScript",
+        "CSS3",
+        "Strapi",
+        "REST"
+      ],
       "url": "https://nmiu.org/",
       "repository": null,
       "nda": true,
       "image": "nmiu",
-      "imageAlt": { "en": "Museum website screenshot", "uk": "Скріншот сайту музею" }
+      "imageAlt": {
+        "en": "Museum website screenshot",
+        "uk": "Скріншот сайту музею"
+      }
     }
   ],
-
   "education": [
+    {
+      "institution": "EPAM Campus",
+      "area": {
+        "en": "IT Marathon 2026: AI-Powered Project Development",
+        "uk": "IT-Марафон 2026: розробка проєкту з AI"
+      },
+      "startDate": "2026-10",
+      "endDate": "2026-11"
+    },
     {
       "institution": "SoftServe IT Academy",
       "area": "Web UI · React Marathon",
@@ -272,156 +419,409 @@
       "endDate": "2021-07"
     }
   ],
-
   "languages": [
     {
-      "language": { "en": "Ukrainian", "uk": "Українська" },
-      "fluency": { "en": "Native", "uk": "Рідна" },
+      "language": {
+        "en": "Ukrainian",
+        "uk": "Українська"
+      },
+      "fluency": {
+        "en": "Native",
+        "uk": "Рідна"
+      },
       "level": 100
     },
     {
-      "language": { "en": "English", "uk": "Англійська" },
-      "fluency": { "en": "Professional", "uk": "Професійна" },
+      "language": {
+        "en": "English",
+        "uk": "Англійська"
+      },
+      "fluency": {
+        "en": "Professional",
+        "uk": "Професійна"
+      },
       "cefr": "B1/B2",
       "level": 75
     },
     {
-      "language": { "en": "Polish", "uk": "Польська" },
-      "fluency": { "en": "Elementary", "uk": "Базова" },
+      "language": {
+        "en": "Polish",
+        "uk": "Польська"
+      },
+      "fluency": {
+        "en": "Elementary",
+        "uk": "Базова"
+      },
       "cefr": "A1/A2",
       "level": 25
     }
   ],
-
   "ui": {
-    "skipLink": { "en": "Skip to content", "uk": "Перейти до змісту" },
-    "homeLink": { "en": "{name}, back to top", "uk": "{name}, на початок" },
-    "navLabel": { "en": "Main navigation", "uk": "Основна навігація" },
+    "skipLink": {
+      "en": "Skip to content",
+      "uk": "Перейти до змісту"
+    },
+    "homeLink": {
+      "en": "{name}, back to top",
+      "uk": "{name}, на початок"
+    },
+    "navLabel": {
+      "en": "Main navigation",
+      "uk": "Основна навігація"
+    },
     "langSwitch": {
-      "label": { "en": "Site language", "uk": "Мова сайту" },
-      "codes": { "en": "EN", "uk": "UA" },
-      "names": { "en": "English", "uk": "Українська" }
+      "label": {
+        "en": "Site language",
+        "uk": "Мова сайту"
+      },
+      "codes": {
+        "en": "EN",
+        "uk": "UA"
+      },
+      "names": {
+        "en": "English",
+        "uk": "Українська"
+      }
     },
     "theme": {
-      "label": { "en": "Theme", "uk": "Тема" },
-      "dark": { "en": "Dark", "uk": "Темна" },
-      "light": { "en": "Light", "uk": "Світла" },
-      "toLight": { "en": "Switch to light theme", "uk": "Увімкнути світлу тему" },
-      "toDark": { "en": "Switch to dark theme", "uk": "Увімкнути темну тему" }
+      "label": {
+        "en": "Theme",
+        "uk": "Тема"
+      },
+      "dark": {
+        "en": "Dark",
+        "uk": "Темна"
+      },
+      "light": {
+        "en": "Light",
+        "uk": "Світла"
+      },
+      "toLight": {
+        "en": "Switch to light theme",
+        "uk": "Увімкнути світлу тему"
+      },
+      "toDark": {
+        "en": "Switch to dark theme",
+        "uk": "Увімкнути темну тему"
+      }
     },
     "menu": {
-      "label": { "en": "Menu", "uk": "Меню" },
-      "open": { "en": "Open menu", "uk": "Відкрити меню" },
-      "close": { "en": "Close menu", "uk": "Закрити меню" },
-      "language": { "en": "Language", "uk": "Мова" }
+      "label": {
+        "en": "Menu",
+        "uk": "Меню"
+      },
+      "open": {
+        "en": "Open menu",
+        "uk": "Відкрити меню"
+      },
+      "close": {
+        "en": "Close menu",
+        "uk": "Закрити меню"
+      },
+      "language": {
+        "en": "Language",
+        "uk": "Мова"
+      }
     },
     "palette": {
       "label": {
         "en": "Change colour palette. Current: {name}",
         "uk": "Змінити кольорову гаму. Зараз: {name}"
       },
-      "announce": { "en": "Colour palette: {name}", "uk": "Кольорова гама: {name}" },
+      "announce": {
+        "en": "Colour palette: {name}",
+        "uk": "Кольорова гама: {name}"
+      },
       "names": {
-        "pinkmint": { "en": "Pink and mint", "uk": "Рожевий і м’ята" },
-        "night": { "en": "Night sky", "uk": "Нічне небо" },
-        "graphite": { "en": "Graphite and orange", "uk": "Графіт і помаранч" },
-        "orchid": { "en": "Orange and purple", "uk": "Помаранч і фіолет" },
-        "sunflower": { "en": "Sunflower", "uk": "Соняшник" },
-        "cobalt": { "en": "Cobalt and orange", "uk": "Кобальт і помаранч" },
-        "cyanfire": { "en": "Cyan and fire", "uk": "Бірюза і вогонь" },
-        "summer": { "en": "Summer", "uk": "Літо" }
+        "pinkmint": {
+          "en": "Pink and mint",
+          "uk": "Рожевий і м’ята"
+        },
+        "night": {
+          "en": "Night sky",
+          "uk": "Нічне небо"
+        },
+        "graphite": {
+          "en": "Graphite and orange",
+          "uk": "Графіт і помаранч"
+        },
+        "orchid": {
+          "en": "Orange and purple",
+          "uk": "Помаранч і фіолет"
+        },
+        "sunflower": {
+          "en": "Sunflower",
+          "uk": "Соняшник"
+        },
+        "cobalt": {
+          "en": "Cobalt and orange",
+          "uk": "Кобальт і помаранч"
+        },
+        "cyanfire": {
+          "en": "Cyan and fire",
+          "uk": "Бірюза і вогонь"
+        },
+        "summer": {
+          "en": "Summer",
+          "uk": "Літо"
+        }
       }
     },
-
     "sections": {
-      "about": { "title": { "en": "About me", "uk": "Про мене" } },
-      "skills": { "title": { "en": "Skills", "uk": "Навички" } },
-      "experience": { "title": { "en": "Experience", "uk": "Досвід" } },
-      "projects": { "title": { "en": "Projects", "uk": "Проєкти" } },
-      "education": { "title": { "en": "Education and languages", "uk": "Освіта і мови" } },
-      "timeline": { "title": { "en": "Timeline", "uk": "Таймлайн" } },
-      "contact": { "title": { "en": "Let’s connect", "uk": "Будьмо на зв’язку" } }
+      "about": {
+        "title": {
+          "en": "About me",
+          "uk": "Про мене"
+        }
+      },
+      "skills": {
+        "title": {
+          "en": "Skills",
+          "uk": "Навички"
+        }
+      },
+      "experience": {
+        "title": {
+          "en": "Experience",
+          "uk": "Досвід"
+        }
+      },
+      "projects": {
+        "title": {
+          "en": "Projects",
+          "uk": "Проєкти"
+        }
+      },
+      "education": {
+        "title": {
+          "en": "Education and languages",
+          "uk": "Освіта і мови"
+        }
+      },
+      "timeline": {
+        "title": {
+          "en": "Timeline",
+          "uk": "Таймлайн"
+        }
+      },
+      "contact": {
+        "title": {
+          "en": "Let’s connect",
+          "uk": "Будьмо на зв’язку"
+        }
+      }
     },
-    "nav": ["about", "skills", "experience", "projects", "timeline", "contact"],
+    "nav": [
+      "about",
+      "skills",
+      "experience",
+      "projects",
+      "timeline",
+      "contact"
+    ],
     "navLabels": {
-      "about": { "en": "About", "uk": "Про мене" },
-      "skills": { "en": "Skills", "uk": "Навички" },
-      "experience": { "en": "Experience", "uk": "Досвід" },
-      "projects": { "en": "Projects", "uk": "Проєкти" },
-      "timeline": { "en": "Timeline", "uk": "Таймлайн" },
-      "contact": { "en": "Contact", "uk": "Контакти" }
+      "about": {
+        "en": "About",
+        "uk": "Про мене"
+      },
+      "skills": {
+        "en": "Skills",
+        "uk": "Навички"
+      },
+      "experience": {
+        "en": "Experience",
+        "uk": "Досвід"
+      },
+      "projects": {
+        "en": "Projects",
+        "uk": "Проєкти"
+      },
+      "timeline": {
+        "en": "Timeline",
+        "uk": "Таймлайн"
+      },
+      "contact": {
+        "en": "Contact",
+        "uk": "Контакти"
+      }
     },
-
     "hero": {
-      "openToWork": { "en": "Open to offers", "uk": "Відкрита до пропозицій" },
-      "downloadPdf": { "en": "Download PDF", "uk": "Завантажити PDF" },
-      "profilesLabel": { "en": "Profiles", "uk": "Профілі" },
+      "openToWork": {
+        "en": "Open to offers",
+        "uk": "Відкрита до пропозицій"
+      },
+      "downloadPdf": {
+        "en": "Download PDF",
+        "uk": "Завантажити PDF"
+      },
+      "profilesLabel": {
+        "en": "Profiles",
+        "uk": "Профілі"
+      },
       "metaLabels": {
-        "location": { "en": "Location", "uk": "Місто" },
-        "workFormat": { "en": "Work format", "uk": "Формат роботи" },
-        "experience": { "en": "Experience", "uk": "Досвід" }
+        "location": {
+          "en": "Location",
+          "uk": "Місто"
+        },
+        "workFormat": {
+          "en": "Work format",
+          "uk": "Формат роботи"
+        },
+        "experience": {
+          "en": "Experience",
+          "uk": "Досвід"
+        }
       }
     },
     "experience": {
-      "remote": { "en": "Remote", "uk": "Віддалено" },
-      "showDetails": { "en": "Show details", "uk": "Показати опис" },
-      "hideDetails": { "en": "Hide details", "uk": "Згорнути опис" },
+      "remote": {
+        "en": "Remote",
+        "uk": "Віддалено"
+      },
+      "showDetails": {
+        "en": "Show details",
+        "uk": "Показати опис"
+      },
+      "hideDetails": {
+        "en": "Hide details",
+        "uk": "Згорнути опис"
+      },
       "duration": {
-        "years": { "en": "{n} yr", "uk": "{n} р." },
-        "months": { "en": "{n} mo", "uk": "{n} міс." }
+        "years": {
+          "en": "{n} yr",
+          "uk": "{n} р."
+        },
+        "months": {
+          "en": "{n} mo",
+          "uk": "{n} міс."
+        }
       }
     },
     "projects": {
-      "site": { "en": "Website", "uk": "Сайт" },
-      "code": { "en": "Code", "uk": "Код" },
-      "codeSrSuffix": { "en": "on GitHub", "uk": "на GitHub" },
-      "nda": { "en": "Closed source (NDA)", "uk": "Код закритий (NDA)" },
-      "stackLabel": { "en": "Stack", "uk": "Стек" }
+      "site": {
+        "en": "Website",
+        "uk": "Сайт"
+      },
+      "code": {
+        "en": "Code",
+        "uk": "Код"
+      },
+      "codeSrSuffix": {
+        "en": "on GitHub",
+        "uk": "на GitHub"
+      },
+      "nda": {
+        "en": "Closed source (NDA)",
+        "uk": "Код закритий (NDA)"
+      },
+      "stackLabel": {
+        "en": "Stack",
+        "uk": "Стек"
+      }
     },
     "education": {
-      "languages": { "en": "Languages", "uk": "Мови" }
+      "languages": {
+        "en": "Languages",
+        "uk": "Мови"
+      }
     },
     "timeline": {
-      "work": { "en": "Work", "uk": "Робота" },
-      "education": { "en": "Education", "uk": "Навчання" }
+      "work": {
+        "en": "Work",
+        "uk": "Робота"
+      },
+      "education": {
+        "en": "Education",
+        "uk": "Навчання"
+      }
     },
     "contact": {
       "text": {
         "en": "I’m open to new opportunities and collaborations. Have a project in mind or a team I could contribute to? Let’s talk.",
         "uk": "Я відкрита до нових можливостей і співпраці. Маєте ідею проєкту або шукаєте розробницю до команди? Буду рада обговорити деталі."
       },
-      "copy": { "en": "Copy email", "uk": "Скопіювати email" },
-      "copied": { "en": "Copied", "uk": "Скопійовано" },
-      "copiedAnnounce": { "en": "Email copied", "uk": "Email скопійовано" },
-      "copyFailed": { "en": "Couldn’t copy", "uk": "Не вдалося скопіювати" },
-      "printVersion": { "en": "Printable A4 version", "uk": "Версія A4 для друку" }
+      "copy": {
+        "en": "Copy email",
+        "uk": "Скопіювати email"
+      },
+      "copied": {
+        "en": "Copied",
+        "uk": "Скопійовано"
+      },
+      "copiedAnnounce": {
+        "en": "Email copied",
+        "uk": "Email скопійовано"
+      },
+      "copyFailed": {
+        "en": "Couldn’t copy",
+        "uk": "Не вдалося скопіювати"
+      },
+      "printVersion": {
+        "en": "Printable A4 version",
+        "uk": "Версія A4 для друку"
+      }
     },
     "footer": {
-      "code": { "en": "Site source on GitHub", "uk": "Код сайту на GitHub" }
+      "code": {
+        "en": "Site source on GitHub",
+        "uk": "Код сайту на GitHub"
+      }
     },
-    "newTab": { "en": "(opens in a new tab)", "uk": "(відкривається в новій вкладці)" },
-    "missing": { "en": "[…]", "uk": "[…]" },
-
+    "newTab": {
+      "en": "(opens in a new tab)",
+      "uk": "(відкривається в новій вкладці)"
+    },
+    "missing": {
+      "en": "[…]",
+      "uk": "[…]"
+    },
     "cv": {
       "title": {
         "en": "Yuliia Chyzhkova — Resume (A4)",
         "uk": "Юлія Чижкова — резюме (A4)"
       },
-      "summary": { "en": "Professional Summary", "uk": "Про мене" },
-      "skills": { "en": "Skills", "uk": "Навички" },
-      "work": { "en": "Work History", "uk": "Досвід роботи" },
-      "projects": { "en": "Projects", "uk": "Проєкти" },
-      "education": { "en": "Education", "uk": "Освіта" },
-      "languages": { "en": "Languages", "uk": "Мови" },
-      "website": { "en": "Website", "uk": "Сайт" }
+      "summary": {
+        "en": "Professional Summary",
+        "uk": "Про мене"
+      },
+      "skills": {
+        "en": "Skills",
+        "uk": "Навички"
+      },
+      "work": {
+        "en": "Work History",
+        "uk": "Досвід роботи"
+      },
+      "projects": {
+        "en": "Projects",
+        "uk": "Проєкти"
+      },
+      "education": {
+        "en": "Education",
+        "uk": "Освіта"
+      },
+      "languages": {
+        "en": "Languages",
+        "uk": "Мови"
+      },
+      "website": {
+        "en": "Website",
+        "uk": "Сайт"
+      }
     },
     "notFound": {
-      "title": { "en": "Page not found", "uk": "Сторінку не знайдено" },
+      "title": {
+        "en": "Page not found",
+        "uk": "Сторінку не знайдено"
+      },
       "text": {
         "en": "This page doesn’t exist or has moved.",
         "uk": "Такої сторінки немає або її перенесено."
       },
-      "home": { "en": "Go to the homepage", "uk": "На головну" }
+      "home": {
+        "en": "Go to the homepage",
+        "uk": "На головну"
+      }
     }
   }
 }
