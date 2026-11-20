@@ -14,7 +14,7 @@
     },
     "pdf": {
       "en": "Yuliia_Chyzhkova_CV_EN.pdf",
-      "uk": "Yuliia_Chyzhkova_CV_UA.pdf"
+      "uk": "Yuliia_Chyzhkova_CV_EN.pdf"
     },
     "analytics": {
       "goatcounter": null
@@ -140,10 +140,10 @@
     "paragraphs": [
       {
         "en": "I’m a software engineer who takes end-to-end ownership of features, from backlog refinement through release and production support. Working directly with stakeholders, I clarify requirements, break down the work, and design technical solutions. I build features across both monolithic and micro-frontend architectures, integrate REST and GraphQL APIs, and write unit and integration tests. I also work closely with QA, manage releases through AWS-based CI/CD pipelines, investigate and resolve production issues.",
-        "uk": "Software Engineer з досвідом повного циклу ведення фіч — від етапу грумінгу (backlog refinement) до релізу та підтримки на продакшені. Працюючи напряму із замовниками та бізнесом (stakeholders), я уточнюю вимоги, декомпозую задачі та проєктую технічні рішення. Розробляю функціонал як у монолітних, так і в мікрофронтенд-архітектурах, інтегрую REST і GraphQL API, а також пишу юніт- та інтеграційні тести. Крім того, я тісно співпрацюю з QA, керую релізами через CI/CD-пайплайни на базі AWS, а також досліджую та вирішую інциденти на продакшені."
+        "uk": "Software Engineer з досвідом повного циклу ведення фіч — від етапу грумінгу (backlog refinement) до релізу та підтримки на продакшені. Працюючи напряму із замовниками та бізнесом (stakeholders), уточнюю вимоги, декомпозую задачі та проєктую технічні рішення. Розробляю функціонал як у монолітних, так і в мікрофронтенд-архітектурах, інтегрую REST і GraphQL API, пишу юніт- та інтеграційні тести. Тісно співпрацюю з QA, керую релізами через CI/CD-пайплайни на базі AWS, досліджую та вирішую інциденти на продакшені."
       },
       {
-        "en": "My current focus is full-stack and AI-powered development. I cover the entire development lifecycle—from requirements and application design to frontend and backend implementation and cloud deployment—integrating AI across the workflow to build features faster, draft technical specifications, and write tests.",
+        "en": "My current focus is full-stack and AI-powered development. I cover the entire development lifecycle—from requirements and application design to frontend and backend implementation, cloud deployment—integrating AI across the workflow to build features faster, draft technical specifications, and write tests.",
         "uk": "Зараз мій основний фокус — full-stack та AI-powered розробка. Я веду весь цикл створення продукту — від збору вимог і проєктування додатку до фронтенд- і бекенд-реалізації та деплою в хмару, інтегруючи AI в робочий процес для швидшої розробки фіч, підготовки технічних специфікацій та написання тестів."
       }
     ]
@@ -537,33 +537,17 @@
           "en": "Pink and mint",
           "uk": "Рожевий і м’ята"
         },
-        "night": {
-          "en": "Night sky",
-          "uk": "Нічне небо"
-        },
-        "graphite": {
-          "en": "Graphite and orange",
-          "uk": "Графіт і помаранч"
-        },
         "orchid": {
           "en": "Orange and purple",
           "uk": "Помаранч і фіолет"
-        },
-        "sunflower": {
-          "en": "Sunflower",
-          "uk": "Соняшник"
         },
         "cobalt": {
           "en": "Cobalt and orange",
           "uk": "Кобальт і помаранч"
         },
-        "cyanfire": {
-          "en": "Cyan and fire",
-          "uk": "Бірюза і вогонь"
-        },
-        "summer": {
-          "en": "Summer",
-          "uk": "Літо"
+        "graphite": {
+          "en": "Graphite and orange",
+          "uk": "Графіт і помаранч"
         }
       }
     },
@@ -738,7 +722,7 @@
     "contact": {
       "text": {
         "en": "I’m open to new opportunities and collaborations. Have a project in mind or a team I could contribute to? Let’s talk.",
-        "uk": "Я відкрита до нових можливостей і співпраці. Маєте ідею проєкту або шукаєте розробницю до команди? Буду рада обговорити деталі."
+        "uk": "Відкрита до нових можливостей і співпраці. Маєте ідею проєкту або шукаєте розробницю до команди? Буду рада обговорити деталі."
       },
       "copy": {
         "en": "Copy email",

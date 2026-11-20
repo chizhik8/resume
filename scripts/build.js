@@ -36,6 +36,7 @@ const pages = meta.langs.map((lang) => ({
 
 await rm(dist, { recursive: true, force: true });
 await cp(new URL('src/assets/', root), new URL('assets/', dist), { recursive: true });
+await cp(new URL('src/pdf/', root), dist, { recursive: true });
 await cp(new URL('main.js', scripts), new URL('assets/scripts/main.js', dist));
 await cp(new URL('modules/', scripts), new URL('assets/scripts/modules/', dist), {
   recursive: true,
